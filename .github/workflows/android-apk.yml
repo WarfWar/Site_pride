@@ -121,7 +121,7 @@ jobs:
           path = 'android/app/build/outputs/apk/debug/app-debug.apk'
           with ZipFile(path) as apk:
               images = [p for p in apk.namelist() if p.startswith('assets/site/photos/') and p.endswith('.webp')]
-              assert len(images) == 125, f'Expected 125 original photographs; only {len(images)} in APK'
+              assert len(images) == 127, f'Expected 125 original and 2 illustrative sushi burger photos; found {len(images)}'
               print(f'APK contains {len(images)} offline food photos')
           PY
 
@@ -150,9 +150,9 @@ jobs:
               bar=[n for n in z.namelist() if n.startswith('assets/site/bar_photos/') and n.endswith('.webp')]
               food=[n for n in z.namelist() if n.startswith('assets/site/photos/') and n.endswith('.webp')]
               assert len(bar)==113, f'Bar photos: {len(bar)} instead of 113'
-              assert len(food)==125, f'Food photos: {len(food)} instead of 125'
+              assert len(food)==127, f'Food photos: {len(food)} instead of 127'
               assert 'assets/site/assets/pride-brand.png' in z.namelist()
-              print('APK verified: 113 exact bar photos and 125 food photos')
+              print('APK verified: 113 original bar photos, 125 original kitchen photos, plus 2 illustrated sushi burger photos')
           PY
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs android/app/build/outputs/apk/debug/app-debug.apk
 

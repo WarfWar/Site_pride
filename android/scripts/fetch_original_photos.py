@@ -49,7 +49,10 @@ for index, item in enumerate(source_items):
 # Card images may be reused deliberately for multiple variants and curated four sushi sets.
 for item in menu:
     path = item["image"]
-    assert path.startswith("./photos/") and path.rsplit("/",1)[-1] in source_paths, (item["title"], path)
+    assert path.startswith("./photos/"), (item["title"],path)
+    filename = path.rsplit("/",1)[-1]
+    assert filename in source_paths or filename in ("sushi-burger-tuna.webp","sushi-burger-shrimp.webp"), (item["title"], path)
+    assert (OUT / filename).is_file() or filename in source_paths, (item["title"], path)
 
 def download(entry):
     index, name, uri, path = entry

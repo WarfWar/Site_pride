@@ -75,6 +75,24 @@ jobs:
           for x in hits[:170]:print("ASSET:",x[:350])
           (out/"asset-refs.json").write_text(json.dumps(hits,ensure_ascii=False,indent=2),encoding="utf-8")
           PY
+      - name: Fetch original menu.json and list actual photos
+        run: |
+          python3 - <<'PY'
+          import pathlib, urllib.request, json, collections
+          u='https://cafe-pride-menu.savory-heron-9771.chatgpt.site/menu.json'
+          req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+          with urllib.request.urlopen(req,timeout=45) as r: data=r.read(5_000_000)
+          out=pathlib.Path('inspection');out.mkdir(exist_ok=True)
+          (out/'menu.json').write_bytes(data)
+          obj=json.loads(data)
+          print('MENU JSON SIZE:',len(data),'ROOT:',type(obj).__name__)
+          print('MENU CATEGORIES:', [(kind,len(cats)) for kind,cats in obj.items()] if isinstance(obj,dict) else '')
+          for kind,cats in obj.items():
+              entries=[(category.get('name'),item) for category in cats for item in category.get('items',[])]
+              withphoto=[(cat,x.get('name'),x.get('image')) for cat,x in entries if x.get('image')]
+              print('KIND',kind,'ITEMS',len(entries),'WITH_PHOTO',len(withphoto))
+              for item in withphoto[:100]:print('PHOTO',repr(item))
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:

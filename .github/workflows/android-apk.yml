@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -58,27 +58,45 @@ jobs:
         with:
           gradle-version: "8.9"
 
-      - name: Download illustrative food photos for offline APK
-        run: python3 android/scripts/fetch_photos.py
+      - name: Recover the exact 125 food photos from the original Pride website
+        run: python3 android/scripts/fetch_original_photos.py
+
+      - name: Preserve original photos in GitHub repository
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add android/app/src/main/assets/site/photos/*.webp
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve 125 original Pride food photographs for offline Android'
+            git push origin HEAD:main
+          fi
 
       - name: Build debug APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
-      - name: Verify offline photographs inside APK
+      - name: Verify exact original photographs inside APK
         run: |
           python3 - <<'PY'
           from zipfile import ZipFile
           path = 'android/app/build/outputs/apk/debug/app-debug.apk'
           with ZipFile(path) as apk:
-              images = [p for p in apk.namelist() if p.startswith('assets/site/photos/') and p.endswith('.jpg')]
-              assert len(images) >= 12, f'Only {len(images)} photos found inside APK'
+              images = [p for p in apk.namelist() if p.startswith('assets/site/photos/') and p.endswith('.webp')]
+              assert len(images) == 125, f'Expected 125 original photographs; only {len(images)} in APK'
               print(f'APK contains {len(images)} offline food photos')
           PY
+
+      - name: Back up source photographs
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrideCafe-original-125-photo-backup
+          path: android/app/src/main/assets/site/photos/*.webp
+          retention-days: 30
 
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: PrideCafe-photos-v1.1-debug-apk
+          name: PrideCafe-original-photos-v1.2-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30

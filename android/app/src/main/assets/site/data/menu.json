@@ -4,874 +4,999 @@
     "title": "Мясные деликатесы",
     "weight": "200г",
     "description": "Салями, корейка, прошутто и говядина в/к",
-    "price": "790"
+    "price": "790",
+    "image": "./photos/menu-001.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Тартар из телятины",
     "weight": "190г/6шт.",
     "description": "Классическое сочетание телятины, каперсов, пикантного соуса, вяленого томата и перепелиного желтка. Подается с пшеничными тостами",
-    "price": "780"
+    "price": "780",
+    "image": "./photos/menu-002.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Карпаччо из телятины",
     "weight": "210г",
     "description": "Блюдо из тонко нарезанных слайсов говяжьей вырезки с сыром пармезан и каперсами, приправленное соусом бальзамико-крем",
-    "price": "890"
+    "price": "890",
+    "image": "./photos/menu-003.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Сырное антипасто",
     "weight": "340г",
     "description": "Дорблю, российский, бри, маасдам, пармезан. Подается с мёдом, орехами и виноградом",
-    "price": "960"
+    "price": "960",
+    "image": "./photos/menu-004.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Овощное ассорти",
     "weight": "340г",
     "description": "Нарезка из свежих овощей: огурец, томат, болгарский перец и зелень",
-    "price": "390"
+    "price": "390",
+    "image": "./photos/menu-005.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Фруктовая нарезка",
     "weight": "1200г",
     "description": "Сезонные ягоды и фрукты в ассортименте",
-    "price": "820"
+    "price": "820",
+    "image": "./photos/menu-006.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Тартар из лосося",
     "weight": "230г/6шт.",
     "description": "Классическое сочетание нежного лосося, пикантного соуса, на подушке из гуакамоле. Подается с пшеничными тостами",
-    "price": "850"
+    "price": "850",
+    "image": "./photos/menu-007.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Ассорти домашних разносолов",
     "weight": "500г",
     "description": "Овощи домашнего посола: огурец, помидор, перец и маринованная капуста",
-    "price": "420"
+    "price": "420",
+    "image": "./photos/menu-008.webp"
   },
   {
     "category": "Холодные закуски",
     "title": "Сельдь слабой соли",
     "weight": "150/100/150/50",
     "description": "с запеченным картофелем, соленым огурцом и маринованным луком",
-    "price": "570"
+    "price": "570",
+    "image": "./photos/menu-009.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Наггетсы с соусом на выбор",
     "weight": "140г/40г",
     "description": "",
-    "price": "370"
+    "price": "370",
+    "image": "./photos/menu-010.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Тигровые креветки в паназиатском соусе",
     "weight": "200г",
     "description": "",
-    "price": "950"
+    "price": "950",
+    "image": "./photos/menu-011.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Ржаные гренки с чесноком, сыром пармезан и чесночным соусом",
     "weight": "150г/50г",
     "description": "",
-    "price": "220"
+    "price": "220",
+    "image": "./photos/menu-012.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Жареные томаты черри в беконе",
     "weight": "150г/50г",
     "description": "Необычное сочетание томатов черри, творожно-сливочного сыра и слайсов бекона - удивит любого гурмана",
-    "price": "540"
+    "price": "540",
+    "image": "./photos/menu-013.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Крылья \"Баффало\"",
     "weight": "320г",
     "description": "Острые жареные куриные крылья в пикантном соусе",
-    "price": "490"
+    "price": "490",
+    "image": "./photos/menu-014.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Сердечки в соусе \"Тай\" \"",
     "weight": "350г",
     "description": "Перец болгарский, лук крымский, кунжут, соус паназиатский",
-    "price": "590"
+    "price": "590",
+    "image": "./photos/menu-015.webp"
   },
   {
     "category": "Горячие закуски",
     "title": "Сырные палочки с соусом на выбор",
     "weight": "140г/40г",
     "description": "",
-    "price": "470"
+    "price": "470",
+    "image": "./photos/menu-016.webp"
   },
   {
     "category": "Первые блюда",
     "title": "Куриный бульон",
     "weight": "350г",
     "description": "Наваристый куриный бульон с домашней лапшой и перепелиным яйцом",
-    "price": "330"
+    "price": "330",
+    "image": "./photos/menu-017.webp"
   },
   {
     "category": "Первые блюда",
     "title": "Борщ",
     "weight": "350г/2шт./50г",
     "description": "Популярное блюдо славянской кухни на насыщеном бульоне с кусочками нежной говядины, подается с пампушками, сметаной и перетертым салом",
-    "price": "470"
+    "price": "470",
+    "image": "./photos/menu-018.webp"
   },
   {
     "category": "Первые блюда",
     "title": "Суп-крем из шампиньонов",
     "weight": "300/20г",
     "description": "Нежный крем-суп со сливками и пшеничными крутонами",
-    "price": "410"
+    "price": "410",
+    "image": "./photos/menu-019.webp"
   },
   {
     "category": "Первые блюда",
     "title": "Солянка",
     "weight": "350г",
     "description": "классический томатный суп с копченостями",
-    "price": "420"
+    "price": "420",
+    "image": "./photos/menu-020.webp"
   },
   {
     "category": "Первые блюда",
     "title": "Том Ям Про с морепродуктами и рисом",
     "weight": "350г",
     "description": "Популярное блюдо тайской кухни готовится на основе, куриного бульона, пасты \"Том Ям\" кокосового молока, и морепродуктов,подается с рисом",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/tom-yam.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с утиной грудкой",
     "weight": "",
     "description": "Микс салата, карамелизированная груша, жареная утиная грудка, апельсин, соус медовый,соус касис, тыквенная семечка",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-021.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с куриной печенью",
     "weight": "",
     "description": "Микс салата, куриная печень, грейпфрут, томаты черри, соус медовый",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-022.webp"
   },
   {
     "category": "Салаты",
     "title": "Свежий салат с авокадо",
     "weight": "240г",
     "description": "Микс салата, свежий огурец, соус песто, кедровый орех, авокадо и соус на перепелином яйце",
-    "price": "600"
+    "price": "600",
+    "image": "./photos/menu-023.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с морепродуктами",
     "weight": "280г",
     "description": "Микс салата, томаты черри, креветка тигровая, кальмар,стебель сельдерея,яблоко,на хрустящей рисовой тарелке под соусом Роско",
-    "price": "890"
+    "price": "890",
+    "image": "./photos/seafood-salad.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с хрустящим баклажаном и куриным филе",
     "weight": "300г",
     "description": "Микс салата,хрустящий баклажан,куриное филе,обжаренное в пикантном соусе,томаты черри,сыр филадельфия,соус сладкий чилли",
-    "price": "630"
+    "price": "630",
+    "image": "./photos/menu-024.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с хрустящим баклажаном и телятиной",
     "weight": "280г",
     "description": "Зеленый микс салата, хоустящий баклажан , тнлятина ,томаты черри, сыр филадельфия, соус сладкий чили",
-    "price": "720"
+    "price": "720",
+    "image": "./photos/menu-025.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат \"Ростбиф\"",
     "weight": "340г",
     "description": "Микс салата с обжаренной телятиной, томатами черри, болгарским перцем, сыром моцарелла и сыром пармезан, заправленный фирменным соусом",
-    "price": "820"
+    "price": "820",
+    "image": "./photos/menu-026.webp"
   },
   {
     "category": "Салаты",
     "title": "Цезарь с курицей",
     "weight": "260г",
     "description": "Классический микс хрустящего салата, обжаренная куриная грудка, томаты черри, пшеничные крутоны, бекон и сыр пармезан под соусом на основе анчоусов и пармезана",
-    "price": "590"
+    "price": "590",
+    "image": "./photos/menu-027.webp"
   },
   {
     "category": "Салаты",
     "title": "Цезарь с лососем\\креветкой",
     "weight": "300г",
     "description": "Классический микс хрустящего салата, нежный лосось слабой соли,или креветкой на выбор,томаты черри, пшеничные крутоны, сыр пармезан под соусом на основе анчоусов и пармезана",
-    "price": "800/770"
+    "price": "800/770",
+    "image": "./photos/menu-028.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат \"Греческий\"",
     "weight": "260г",
     "description": "Классический овощной салат из свежих томатов, огурцов, болгарского перца, оливок, маслин с сырами филадельфия и фета, заправленный пряным маслом",
-    "price": "540"
+    "price": "540",
+    "image": "./photos/menu-029.webp"
   },
   {
     "category": "Стейки",
     "title": "Премиальный стейк \"Рибай\"",
     "weight": "100г/20г",
     "description": "Стейк из спинной части говядины имеет обильную жировую прослойку, которая обесбечивает неповторимый вкус и аромат",
-    "price": "1090"
+    "price": "1090",
+    "image": "./photos/menu-030.webp"
   },
   {
     "category": "Стейки",
     "title": "Стейк из свиной шеи с картофелем по-деревенски и соусом тарго",
     "weight": "220г/80г/50г",
     "description": "",
-    "price": "760"
+    "price": "760",
+    "image": "./photos/menu-031.webp"
   },
   {
     "category": "Стейки",
     "title": "Стейк \"Лоин\" из свинины на кости с мятым картофелем",
     "weight": "280г/120г",
     "description": "",
-    "price": "840"
+    "price": "840",
+    "image": "./photos/menu-032.webp"
   },
   {
     "category": "Стейки",
     "title": "Филе куриное с сыром моцарелла, томатами, под соусом дорблю",
     "weight": "260г/70г/50г",
     "description": "",
-    "price": "770"
+    "price": "770",
+    "image": "./photos/menu-033.webp"
   },
   {
     "category": "Стейки",
     "title": "Картофель по-домашнему со свининой",
     "weight": "260г",
     "description": "",
-    "price": "520"
+    "price": "520",
+    "image": "./photos/menu-034.webp"
   },
   {
     "category": "Стейки",
     "title": "Стейк \"Стриплоин\"",
     "weight": "260г/120г",
     "description": "Тонкий край телятины, с насыщенным вкусом и ароматом, подается с мятым картофелем и соусом из запеченного чеснока и ореха Рекомендуемая степень прожарки - \"Медиум\"",
-    "price": "1240"
+    "price": "1240",
+    "image": "./photos/menu-035.webp"
   },
   {
     "category": "Рыба",
     "title": "Стейк из лосося",
     "weight": "140г/120г",
     "description": "Подается со сливочно-шпинатным соусом",
-    "price": "1250"
+    "price": "1250",
+    "image": "./photos/menu-036.webp"
   },
   {
     "category": "Рыба",
     "title": "Филе судака на луковой подушке со сливочным соусом 160\\50",
     "weight": "",
     "description": "",
-    "price": "820"
+    "price": "820",
+    "image": "./photos/menu-037.webp"
   },
   {
     "category": "Лапша и паста",
     "title": "Удон — телятина",
     "weight": "300г",
     "description": "",
-    "price": "680"
+    "price": "680",
+    "image": "./photos/menu-038.webp"
   },
   {
     "category": "Лапша и паста",
     "title": "Удон — курица",
     "weight": "300г",
     "description": "",
-    "price": "450"
+    "price": "450",
+    "image": "./photos/menu-039.webp"
   },
   {
     "category": "Лапша и паста",
     "title": "Удон — креветка",
     "weight": "300г",
     "description": "",
-    "price": "660"
+    "price": "660",
+    "image": "./photos/menu-040.webp"
   },
   {
     "category": "Лапша и паста",
     "title": "Паста карбонара",
     "weight": "300г",
     "description": "Сливочная паста с беконом и яичным желтком",
-    "price": "380"
+    "price": "380",
+    "image": "./photos/menu-041.webp"
   },
   {
     "category": "Бургеры",
     "title": "Бургер \"1000 островов\"",
     "weight": "300г/70г/60г",
     "description": "Булочка бриошь, рубленая говядина, сыр чеддер, бекон, томаты, лук, огурец маринованный, соус \"1000 островов\", картофель фри, салат коул-слоу",
-    "price": "810"
+    "price": "810",
+    "image": "./photos/menu-042.webp"
   },
   {
     "category": "Бургеры",
     "title": "Чикен-бургер",
     "weight": "270г/70г/60г",
     "description": "Булочка бриошь, куриная котлета, сыр чеддер, сыр моцарелла, томаты, лук, огурец маринованный, соус цезарь, картофель фри, салат коул-слоу",
-    "price": "640"
+    "price": "640",
+    "image": "./photos/menu-043.webp"
   },
   {
     "category": "Бургеры",
     "title": "Бургер \"Дабл Биф\"",
     "weight": "420г/70г/60г",
     "description": "Булочка бриошь, рубленая говядина, слайсы телятины, сыр чеддер, бекон, томаты, лук, огурец маринованный, соус \"1000 островов\", соус чесночный, картофель фри, салат коул-слоу",
-    "price": "1090"
+    "price": "1090",
+    "image": "./photos/menu-044.webp"
   },
   {
     "category": "Пицца",
     "title": "Маргарита",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, моцареллой, свежими листьями базилика и оливковым маслом",
-    "price": "510"
+    "price": "510",
+    "image": "./photos/margherita.webp"
   },
   {
     "category": "Пицца",
     "title": "4 сыра",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца со сливочно-дижонским соусом, сырами пармезан, дорблю, голландским, молодой моцареллой и моцареллой рассолльной",
-    "price": "810"
+    "price": "810",
+    "image": "./photos/menu-045.webp"
   },
   {
     "category": "Пицца",
     "title": "Гавайская",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, ананасом, куриным филе, свежими томатами и сыром моцарелла",
-    "price": "680"
+    "price": "680",
+    "image": "./photos/menu-046.webp"
   },
   {
     "category": "Пицца",
     "title": "Мясная",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, охотничьими колбасками, беконом, ветчиной, пепперони, болгарским перцем и сыром моцарелла",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/menu-047.webp"
   },
   {
     "category": "Пицца",
     "title": "С прошутто и соусом песто",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, прошутто, моцареллой, свежими листьями базилика и соусом песто",
-    "price": "740"
+    "price": "740",
+    "image": "./photos/menu-048.webp"
   },
   {
     "category": "Пицца",
     "title": "Диабло",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, моцареллой, чоризо, беконом, свежими листьями базилика и оливковым маслом",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/menu-049.webp"
   },
   {
     "category": "Пицца",
     "title": "Пепперони",
     "weight": "30см",
     "description": "Традиционная неаполитанская пицца с соусом пелати, моцареллой, пепперони, свежими листьями базилика и оливковым маслом",
-    "price": "670"
+    "price": "670",
+    "image": "./photos/menu-050.webp"
   },
   {
     "category": "Роллы",
     "title": "Филадельфия — Лосось",
     "weight": "320г",
     "description": "",
-    "price": "720"
+    "price": "720",
+    "image": "./photos/menu-051.webp"
   },
   {
     "category": "Роллы",
     "title": "Филадельфия — Тунец",
     "weight": "320г",
     "description": "",
-    "price": "680"
+    "price": "680",
+    "image": "./photos/menu-052.webp"
   },
   {
     "category": "Роллы",
     "title": "Филадельфия — Угорь",
     "weight": "320г",
     "description": "",
-    "price": "700"
+    "price": "700",
+    "image": "./photos/menu-053.webp"
   },
   {
     "category": "Роллы",
     "title": "Филадельфия — Креветка",
     "weight": "320г",
     "description": "",
-    "price": "710"
+    "price": "710",
+    "image": "./photos/menu-054.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Лосось",
     "weight": "320г",
     "description": "",
-    "price": "670"
+    "price": "670",
+    "image": "./photos/menu-055.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Тунец",
     "weight": "320г",
     "description": "",
-    "price": "630"
+    "price": "630",
+    "image": "./photos/menu-056.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Угорь",
     "weight": "320г",
     "description": "",
-    "price": "650"
+    "price": "650",
+    "image": "./photos/menu-057.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Креветка",
     "weight": "320г",
     "description": "",
-    "price": "660"
+    "price": "660",
+    "image": "./photos/menu-058.webp"
   },
   {
     "category": "Роллы",
     "title": "Спринг-ролл с лососем",
     "weight": "150г",
     "description": "",
-    "price": "560"
+    "price": "560",
+    "image": "./photos/menu-059.webp"
   },
   {
     "category": "Роллы",
     "title": "Спринг-ролл с ростбифом",
     "weight": "180г",
     "description": "",
-    "price": "550"
+    "price": "550",
+    "image": "./photos/menu-060.webp"
   },
   {
     "category": "Роллы",
     "title": "Спринг-ролл с креветкой",
     "weight": "150г",
     "description": "",
-    "price": "540"
+    "price": "540",
+    "image": "./photos/menu-061.webp"
   },
   {
     "category": "Роллы",
     "title": "Суши-бургер с тунцом",
     "weight": "",
     "description": "",
-    "price": "740"
+    "price": "740",
+    "image": "./photos/menu-062.webp"
   },
   {
     "category": "Роллы",
     "title": "Суши-бургер с креветкой",
     "weight": "",
     "description": "",
-    "price": "820"
+    "price": "820",
+    "image": "./photos/menu-063.webp"
   },
   {
     "category": "Роллы",
     "title": "Чёрный Дракон",
     "weight": "330г",
     "description": "Сыр филадельфия, авокадо, лангустин, креветка, угорь, икра тобико",
-    "price": "890"
+    "price": "890",
+    "image": "./photos/menu-064.webp"
   },
   {
     "category": "Роллы",
     "title": "Золотой Дракон",
     "weight": "380г",
     "description": "Сыр филадельфия, авокадо, лангустин, креветка, лосось, икра тобико",
-    "price": "920"
+    "price": "920",
+    "image": "./photos/menu-065.webp"
   },
   {
     "category": "Роллы",
     "title": "Чёрный Хамацу",
     "weight": "310г",
     "description": "Сыр филадельфия, свежий огурец, икра тобико, лосось, снежный краб",
-    "price": "710"
+    "price": "710",
+    "image": "./photos/menu-066.webp"
   },
   {
     "category": "Роллы",
     "title": "Бонито Спайси",
     "weight": "310г",
     "description": "Сыр филадельфия, омлет томаго, лосось, стружка тунца",
-    "price": "620"
+    "price": "620",
+    "image": "./photos/menu-067.webp"
   },
   {
     "category": "Роллы",
     "title": "Цезарь",
     "weight": "310г",
     "description": "Сыр филадельфия, копченая куриная грудка, айсберг, томат",
-    "price": "480"
+    "price": "480",
+    "image": "./photos/menu-068.webp"
   },
   {
     "category": "Роллы",
     "title": "Чёрный Итачи",
     "weight": "350г",
     "description": "Сыр филадельфия, авокадо, омлет томаго, тунец, креветка тигровая",
-    "price": "880"
+    "price": "880",
+    "image": "./photos/menu-069.webp"
   },
   {
     "category": "Роллы",
     "title": "Горячие роллы",
     "weight": "330г",
     "description": "- Креветка",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/menu-070.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Мидия",
     "weight": "330г",
     "description": "",
-    "price": "580"
+    "price": "580",
+    "image": "./photos/menu-071.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Угорь",
     "weight": "330г",
     "description": "",
-    "price": "680"
+    "price": "680",
+    "image": "./photos/menu-072.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Лосось",
     "weight": "330г",
     "description": "",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/menu-073.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Тунец",
     "weight": "330г",
     "description": "",
-    "price": "630"
+    "price": "630",
+    "image": "./photos/menu-074.webp"
   },
   {
     "category": "Роллы",
     "title": "Запеченные роллы",
     "weight": "330г",
     "description": "- Угорь",
-    "price": "690"
+    "price": "690",
+    "image": "./photos/menu-075.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Лосось",
     "weight": "330г",
     "description": "",
-    "price": "780"
+    "price": "780",
+    "image": "./photos/menu-076.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Тунец",
     "weight": "330г",
     "description": "",
-    "price": "620"
+    "price": "620",
+    "image": "./photos/menu-077.webp"
   },
   {
     "category": "Роллы",
     "title": "Калифорния — Креветка",
     "weight": "330г",
     "description": "",
-    "price": "700"
+    "price": "700",
+    "image": "./photos/menu-078.webp"
   },
   {
     "category": "Сеты",
     "title": "Сет \"Крюгер\" +",
     "weight": "",
     "description": "",
-    "price": "3900"
+    "price": "3900",
+    "image": "./photos/sushi-set.webp"
   },
   {
     "category": "Сеты",
     "title": "- Филадельфия с лососем",
     "weight": "320г",
     "description": "1840\\120г\\48шт - Ролл с лососем и авокадо 230г",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-079.webp"
   },
   {
     "category": "Сеты",
     "title": "- Ролл с жареным окунем",
     "weight": "290г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-080.webp"
   },
   {
     "category": "Сеты",
     "title": "- Ролл с тунцом",
     "weight": "340г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-081.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с окунем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-082.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с угрем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-083.webp"
   },
   {
     "category": "Сеты",
     "title": "- Салат \"Чука\" с ореховым соусом",
     "weight": "120г",
     "description": "2070г/120г/ 48шт. Сет \"Этоша\"",
-    "price": "3700"
+    "price": "3700",
+    "image": "./photos/menu-084.webp"
   },
   {
     "category": "Сеты",
     "title": "- Запеченный с крабом",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-085.webp"
   },
   {
     "category": "Сеты",
     "title": "- Запеченный с креветкой",
     "weight": "320г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-086.webp"
   },
   {
     "category": "Сеты",
     "title": "- Запеченный с угрем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-087.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с лососем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-088.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с мидией",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-089.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с окунем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-090.webp"
   },
   {
     "category": "Сеты",
     "title": "- Салат \"Чука\" с ореховым соусом",
     "weight": "120г",
     "description": "900г/32шт. Сет \"Чоба\"",
-    "price": "1950"
+    "price": "1950",
+    "image": "./photos/menu-091.webp"
   },
   {
     "category": "Сеты",
     "title": "- Филадельфия с лососем",
     "weight": "320г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-092.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с окунем в унаги",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-093.webp"
   },
   {
     "category": "Сеты",
     "title": "- Мак с лососем, мак с огурцом",
     "weight": "240г",
     "description": "1640г/ 40шт. Сет \"Эддо\"",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-094.webp"
   },
   {
     "category": "Сеты",
     "title": "- Ролл с лососем и окунем с начинкой из мидий и крем-сыром",
     "weight": "320г",
     "description": "- Ролл с авокадо и начинкой из снежного краба 330г",
-    "price": "3200"
+    "price": "3200",
+    "image": "./photos/menu-095.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с тунцом",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-096.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с мидией",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-097.webp"
   },
   {
     "category": "Сеты",
     "title": "- Горячий с окунем",
     "weight": "330г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-098.webp"
   },
   {
     "category": "Гарниры",
     "title": "Овощи гриль",
     "weight": "230г",
     "description": "томат, перец болгарский, кабачок, лук, грибы",
-    "price": "390"
+    "price": "390",
+    "image": "./photos/menu-099.webp"
   },
   {
     "category": "Гарниры",
     "title": "Картофель фри с соусом на выбор",
     "weight": "150г/40г",
     "description": "",
-    "price": "280"
+    "price": "280",
+    "image": "./photos/menu-100.webp"
   },
   {
     "category": "Гарниры",
     "title": "Рис с овощами",
     "weight": "220г",
     "description": "лук, морковь, стручковая фасоль, перец болгарский",
-    "price": "270"
+    "price": "270",
+    "image": "./photos/menu-101.webp"
   },
   {
     "category": "Гарниры",
     "title": "Картофель по-деревенски с соусом на выбор",
     "weight": "180г/40г",
     "description": "",
-    "price": "280"
+    "price": "280",
+    "image": "./photos/menu-102.webp"
   },
   {
     "category": "Хлеб",
     "title": "Булочка пшеничная",
     "weight": "1шт.",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-103.webp"
   },
   {
     "category": "Хлеб",
     "title": "Хлеб Пшеничный",
     "weight": "60г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-104.webp"
   },
   {
     "category": "Хлеб",
     "title": "Хлеб Бородинский",
     "weight": "60г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-105.webp"
   },
   {
     "category": "Хлеб",
     "title": "Фокачча с томатами и моцареллой",
     "weight": "1шт.",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-106.webp"
   },
   {
     "category": "Хлеб",
     "title": "Фокачча с ароматными травами",
     "weight": "1шт.",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-107.webp"
   },
   {
     "category": "Соусы",
     "title": "Кетчуп",
     "weight": "50г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-108.webp"
   },
   {
     "category": "Соусы",
     "title": "Чесночный",
     "weight": "50г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-109.webp"
   },
   {
     "category": "Соусы",
     "title": "Дорблю",
     "weight": "50г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-110.webp"
   },
   {
     "category": "Соусы",
     "title": "Сырный",
     "weight": "50г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-111.webp"
   },
   {
     "category": "Соусы",
     "title": "Сладкий чили",
     "weight": "50г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-112.webp"
   },
   {
     "category": "Десерты",
     "title": "Сырники",
     "weight": "160г/50г",
     "description": "Из домашнего творога с крем-чизом",
-    "price": "480"
+    "price": "480",
+    "image": "./photos/menu-113.webp"
   },
   {
     "category": "Десерты",
     "title": "Штрудель — Вишнёвый",
     "weight": "150г/50г",
     "description": "",
-    "price": "470"
+    "price": "470",
+    "image": "./photos/menu-114.webp"
   },
   {
     "category": "Десерты",
     "title": "Штрудель — Яблочный",
     "weight": "150г/50г",
     "description": "Тёплый десерт из слоёного теста с запечёнными фруктами. Подаётся с шариком мороженого",
-    "price": "480"
+    "price": "480",
+    "image": "./photos/menu-115.webp"
   },
   {
     "category": "Десерты",
     "title": "Меренговый рулет",
     "weight": "150г/50г",
     "description": "Нежный рулет с хрустящей меренговой корочкой, сливочным крем-сыром и ягодным соусом",
-    "price": "500"
+    "price": "500",
+    "image": "./photos/menu-116.webp"
   },
   {
     "category": "Десерты",
     "title": "Шоколадный фондан",
     "weight": "100г/50г",
     "description": "Классический десерт из тёмного шоколада. Подаётся с шариком мороженого",
-    "price": "490"
+    "price": "490",
+    "image": "./photos/menu-117.webp"
   },
   {
     "category": "Десерты",
     "title": "Чизкейк \"Сан-Себастьян\"",
     "weight": "150г/50г",
     "description": "Классический баскский чизкейк с нежной кремовой текстурой и топленым шоколадом",
-    "price": "550"
+    "price": "550",
+    "image": "./photos/san-sebastian.webp"
   },
   {
     "category": "Десерты",
     "title": "Торт \"Наполеон\"",
     "weight": "200г",
     "description": "",
-    "price": "420"
+    "price": "420",
+    "image": "./photos/menu-118.webp"
   },
   {
     "category": "Десерты",
     "title": "Тирамису с маскарпоне",
     "weight": "130г",
     "description": "",
-    "price": ""
+    "price": "",
+    "image": "./photos/menu-119.webp"
   },
   {
     "category": "Десерты",
     "title": "Мороженое",
     "weight": "50г",
     "description": "",
-    "price": "140"
+    "price": "140",
+    "image": "./photos/menu-120.webp"
   }
 ]

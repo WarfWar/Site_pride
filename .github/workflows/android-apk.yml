@@ -141,7 +141,7 @@ jobs:
           git add android/app/src/main/assets/site/bar_photos/*.webp
           if ! git diff --cached --quiet; then
             git commit -m 'Save all 113 individual original bar photographs'
-            git pull --rebase origin main
+            git -c rebase.autoStash=true pull --rebase origin main
             git push origin HEAD:main
           fi
 

@@ -14,9 +14,12 @@ async function init(){
  document.querySelectorAll('[data-feature]').forEach(a=>a.addEventListener('click',()=>{showTab('kitchen');state.category=a.dataset.feature;state.query='';$('search').value='';render()}));
  $('tab-kitchen').addEventListener('click',()=>showTab('kitchen'));
  $('tab-bar').addEventListener('click',()=>showTab('bar'));
+ $('tab-news').addEventListener('click',()=>showTab('news'));
+ document.querySelectorAll('[data-pride-tab]').forEach(a=>a.addEventListener('click',()=>showTab(a.dataset.prideTab)));
  render();
 }
-function showTab(which){state.tab=which;for(const k of ['kitchen','bar']){$(k).hidden=k!==which;$('tab-'+k).classList.toggle('selected',k===which);$('tab-'+k).setAttribute('aria-selected',String(k===which))}}
+function showTab(which){state.tab=which;for(const k of ['kitchen','bar','news']){$(k).hidden=k!==which;$('tab-'+k).classList.toggle('selected',k===which);$('tab-'+k).setAttribute('aria-selected',String(k===which))}}
+window.PrideNavigation={showTab};
 function render(){
  const filtered=items.map((item,_id)=>({...item,_id})).filter(i=>(state.category==='Все категории'||i.category===state.category)&&(!state.query||[i.title,i.description,i.category,i.weight].join(' ').toLocaleLowerCase('ru').includes(state.query)));
  document.querySelectorAll('[data-cat]').forEach(b=>{const active=b.dataset.cat===state.category;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});

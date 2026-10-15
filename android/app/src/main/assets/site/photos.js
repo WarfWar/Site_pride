@@ -27,7 +27,7 @@ function asset(item){return item.image || './photos/'+keyFor(item)+'.jpg'}
 function fallback(item){if(item.category==='Пицца')return './assets/pizza.svg';if(['Роллы','Сеты'].includes(item.category))return './assets/rolls.svg';if(item.category==='Бургеры')return './assets/burger.svg';return './assets/hero.svg'}
 function imageHTML(item,className,lazy){
  const label=String(item.title||'блюда').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- return '<img class="'+className+'" data-fallback="'+fallback(item)+'" src="'+asset(item)+'" loading="'+(lazy?'lazy':'eager')+'" alt="Фото блюда из меню Прайд: '+label+'" decoding="async">';
+ return '<span class="pride-watermark'+(className==='cart-thumb'?' is-thumb':'')+'"><img class="'+className+'" data-fallback="'+fallback(item)+'" src="'+asset(item)+'" loading="'+(lazy?'lazy':'eager')+'" alt="Фото блюда из меню Прайд: '+label+'" decoding="async"><span class="pride-watermark-top">ФОТО ДЛЯ ЗНАКОМСТВА</span><span class="pride-watermark-bottom"><img src="./assets/pride-original-logo.png" alt="" aria-hidden="true"><span>Ваше блюдо может выглядеть иначе</span></span></span>';
 }
 function decorate(){
  const items=window.PrideMenu||[];
@@ -35,7 +35,7 @@ function decorate(){
    if(card.querySelector('.dish-photo'))continue;
    const item=items[Number(card.dataset.itemId)];if(!item)continue;
    const photo=document.createElement('figure');photo.className='dish-photo';
-   photo.innerHTML=imageHTML(item,'dish-image',true)+'<figcaption>Фото из меню Прайд</figcaption>';
+   photo.innerHTML=imageHTML(item,'dish-image',true)+'<figcaption>Ознакомительное фото</figcaption>';
    card.insertBefore(photo,card.firstChild);
  }
 }

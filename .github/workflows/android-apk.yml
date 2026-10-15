@@ -72,6 +72,11 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Prepare current public Telegram news snapshot
+        run: |
+          python3 -m pip install -q beautifulsoup4
+          python3 android/scripts/sync_pride_news.py --bundle
+
       - name: Build debug APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
@@ -86,6 +91,22 @@ jobs:
               print(f'APK contains {len(images)} offline food photos')
           PY
 
+      - name: Verify signed APK, logo and news resources
+        run: |
+          APK=android/app/build/outputs/apk/debug/app-debug.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK"
+          python3 - <<'PY'
+          from zipfile import ZipFile
+          import json
+          apk='android/app/build/outputs/apk/debug/app-debug.apk'
+          with ZipFile(apk) as z:
+              required=['assets/site/assets/pride-original-logo.png', 'assets/site/news.js', 'assets/site/data/news.json', 'assets/site/cart.js', 'assets/site/photos.js']
+              for p in required: assert p in z.namelist(), f'Missing {p}'
+              j=json.loads(z.read('assets/site/data/news.json'))
+              assert isinstance(j.get('posts'),list)
+              print('Validated original logo and offline news snapshot. Posts:',len(j['posts']))
+          PY
+
       - name: Back up source photographs
         uses: actions/upload-artifact@v4
         with:
@@ -96,7 +117,7 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: PrideCafe-original-photos-v1.2-apk
+          name: PrideCafe-v1.4-telegram-news-fixed-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30

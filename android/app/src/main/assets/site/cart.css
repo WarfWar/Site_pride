@@ -46,3 +46,11 @@ body{padding-bottom:82px}[hidden]{display:none!important}.topbar .brand img,foot
 #cart-drawer .cart-footer{background:#efe8dc!important;color:#282823!important}
 #cart-drawer .cart-total b{color:#251f17!important}
 #cart-drawer .cart-line{background:#fff!important}
+
+/* v1.6.2: A single clean, correctly wrapping disclosure across all photos. */
+.photo-shell{position:relative;display:block;overflow:hidden;width:100%;height:100%;background:#232421}
+.photo-shell>img.dish-image,.photo-shell>img.cart-thumb{display:block;width:100%;height:100%;object-fit:cover}
+.photo-ribbon,.dish-photo figcaption{display:none!important}
+.photo-shell>.photo-disclaimer{box-sizing:border-box!important;position:absolute!important;bottom:10px!important;left:10px!important;right:auto!important;top:auto!important;width:auto!important;max-width:calc(100% - 20px)!important;min-width:0!important;display:inline-block!important;padding:7px 11px!important;border-radius:8px!important;border:1px solid rgba(255,255,255,.22)!important;background:rgba(20,22,20,.84)!important;color:#fff!important;box-shadow:0 3px 14px rgba(0,0,0,.24)!important;white-space:normal!important;word-break:normal!important;overflow-wrap:break-word!important;font:600 11px/1.4 Arial,Helvetica,sans-serif!important;letter-spacing:.015em!important;text-align:left!important;text-transform:none!important;pointer-events:none!important}
+.photo-shell.compact>.photo-disclaimer{left:3px!important;right:3px!important;bottom:3px!important;max-width:none!important;display:block!important;padding:3px 4px!important;border-radius:4px!important;font:600 7px/1.2 Arial,Helvetica,sans-serif!important;text-align:center!important}
+.feature img{display:block;width:100%;height:100%;object-fit:cover;background:#1c1e1b}

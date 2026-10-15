@@ -5,10 +5,10 @@ function fallback(item){if(item.category==='Пицца')return './assets/pizza.s
 function asset(item){return item.image || fallback(item);}
 function photoBox(item,imgClass,lazy,compact){
  const label=escapeHtml(item.title||'блюда');
+ const message=compact ? 'Фото для примера' : 'Фото ознакомительное · подача может отличаться';
  return '<div class="photo-shell'+(compact?' compact':'')+'">'+
         '<img class="'+imgClass+'" data-fallback="'+fallback(item)+'" src="'+asset(item)+'" loading="'+(lazy?'lazy':'eager')+'" alt="Фото позиции меню Прайд: '+label+'" decoding="async">'+
-        '<div class="photo-ribbon'+(compact?' compact':'')+'">ОЗНАКОМИТЕЛЬНОЕ ФОТО</div>'+
-        '<div class="photo-disclaimer'+(compact?' compact':'')+'"><img src="'+LOGO+'" alt="" aria-hidden="true"><span>Может отличаться<br>от готовой подачи</span></div>'+
+        '<span class="photo-disclaimer'+(compact?' compact':'')+'">'+message+'</span>'+
         '</div>';
 }
 function decorate(){
@@ -21,7 +21,7 @@ function decorate(){
     if(!item)return;
     const figure=document.createElement('figure');
     figure.className='dish-photo';
-    figure.innerHTML=photoBox(item,'dish-image',true,false)+'<figcaption>Ознакомительное фото</figcaption>';
+    figure.innerHTML=photoBox(item,'dish-image',true,false);
     card.insertBefore(figure,card.firstChild);
   });
 }

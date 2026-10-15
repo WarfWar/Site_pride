@@ -88,6 +88,26 @@ jobs:
           node --check android/app/src/main/assets/site/photos.js
           node --check android/app/src/main/assets/site/news.js
 
+      - name: Validate photo references and disclosure
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+          root=Path('android/app/src/main/assets/site')
+          h=BeautifulSoup((root/'index.html').read_text(encoding='utf-8'),'html.parser')
+          missing=[]
+          for img in h.select('img[src]'):
+              src=img['src']
+              if src.startswith('./') and not (root/src).is_file():
+                  missing.append(src)
+          assert not missing, f'Broken images in home page: {missing}'
+          photo_js=(root/'photos.js').read_text(encoding='utf-8')
+          assert "photo-ribbon" not in photo_js
+          assert "<figcaption>" not in photo_js
+          assert "Фото ознакомительное" in photo_js
+          print('PASS: every home page image resolves; single clean photo disclaimer')
+          PY
+
       - name: Build debug APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
@@ -155,7 +175,7 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: PrideCafe-v1.6-Android-APK
+          name: PrideCafe-v1.6.2-fixed-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30

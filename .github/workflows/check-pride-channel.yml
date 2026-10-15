@@ -1,0 +1,24 @@
+name: Check Pride Telegram public channel
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/check-pride-channel.yml]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect public Telegram preview
+        run: |
+          python3 - <<'PY'
+          import urllib.request,re
+          url='https://t.me/s/cafe_Pride_Volna'
+          req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; PrideReader/1.0)'})
+          try:
+            with urllib.request.urlopen(req,timeout=22) as r:
+              s=r.read(2000000).decode('utf-8','replace')
+              print('TELEGRAM_STATUS',r.status,'FINAL_URL',r.url,'HTML_LENGTH',len(s))
+              print('POST_IDS',re.findall(r'data-post="([^"]+)"',s)[:15])
+              print('CHANNEL_TITLE',re.findall(r'<title>([^<]+)</title>',s)[:3])
+          except Exception as e: print('TELEGRAM_FETCH_FAILED',type(e).__name__,str(e))
+          PY

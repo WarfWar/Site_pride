@@ -1,0 +1,45 @@
+/* 1.7.1 responsive Pride design: real-photo hero + edge-to-edge illustrated product photography. */
+.hero { position:relative; }
+.hero-grid {min-height:0!important;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)!important;gap:clamp(18px,3vw,44px)!important;align-items:center!important;}
+.hero-copy{min-width:0;padding:clamp(28px,5vw,68px) 0!important;}
+.hero h1{font-size:clamp(42px,5vw,77px)!important;margin:20px 0 22px!important;line-height:1.07!important;}
+.hero p{font-size:clamp(13px,1.45vw,16px);line-height:1.65!important;}
+.hero-actions{margin-top:25px!important;gap:12px;}
+.hero-bottom{margin-top:38px!important;}
+.hero-art{position:relative!important;min-width:0!important;min-height:0!important;height:clamp(300px,33vw,430px)!important;max-height:430px!important;overflow:hidden!important;align-self:center!important;border-radius:22px;background:#382a20!important;box-shadow:0 22px 48px rgba(0,0,0,.25);}
+.hero-art>img{display:none!important;}
+.hero-art:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.35)),url('./photos/menu-042.webp') center 53% / cover no-repeat;}
+.hero-stamp{bottom:15px!important;right:15px!important;width:96px!important;height:96px!important;font-size:9px!important;z-index:1;}
+/* A softly blurred continuation behind the complete foreground portrait photo. */
+.dish-photo{aspect-ratio:1.36!important;background:#c4a27c!important;}
+.photo-shell:not(.compact){position:relative!important;width:100%!important;height:100%!important;display:block!important;isolation:isolate;background:#8b6c4e!important;}
+.photo-shell:not(.compact)>.photo-fill{position:absolute!important;inset:-14%!important;width:128%!important;height:128%!important;max-width:none!important;object-fit:cover!important;object-position:center!important;filter:blur(15px) saturate(1.12) brightness(.9)!important;transform:scale(1.08)!important;z-index:0!important;pointer-events:none;}
+.photo-shell:not(.compact)>.dish-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;z-index:1!important;transform:none!important;}
+.photo-shell:not(.compact)>.photo-disclaimer{position:absolute!important;z-index:2!important;bottom:10px!important;left:10px!important;right:auto!important;max-width:calc(100% - 20px)!important;}
+.dish:hover .photo-shell:not(.compact)>.dish-image{transform:none!important;}
+.dish{display:flex!important;flex-direction:column!important;}
+.dish>div:not(.dish-photo){flex:1!important;}
+@media(min-width:721px) and (max-width:980px) and (orientation:portrait){
+ .hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;gap:18px!important;}
+ .hero-copy{padding:34px 0!important;}
+ .hero h1{font-size:clamp(38px,5.5vw,56px)!important;}
+ .hero-art{height:340px!important;max-width:none!important;margin:0!important;}
+ .hero-art:before{background-position:center 53%;}
+ .hero-stamp{width:75px!important;height:75px!important;bottom:10px!important;right:10px!important;}
+}
+@media(max-width:720px){
+ .hero-grid{display:grid!important;grid-template-columns:1fr!important;gap:0!important;}
+ .hero-copy{padding:33px 0 22px!important;}
+ .hero h1{font-size:clamp(39px,10vw,58px)!important;margin:16px 0 20px!important;}
+ .hero-actions{margin-top:23px!important;}
+ .hero-art{height:225px!important;max-height:225px!important;max-width:none!important;width:100%!important;margin:0 0 24px!important;border-radius:16px!important;transform:none!important;}
+ .hero-stamp{height:68px!important;width:68px!important;font-size:7px!important;right:10px!important;bottom:10px!important;}
+ .hero-stamp b{font-size:15px!important;bottom:7px!important;}
+ .hero-bottom{display:none!important;}
+ .dish-photo{aspect-ratio:1.38!important;}
+}
+@media(max-width:380px){
+ .hero-art{height:200px!important;max-height:200px!important;}
+ .hero-actions .btn{padding:12px 14px!important;font-size:11px!important;}
+ .dish-photo{aspect-ratio:1.25!important;}
+}

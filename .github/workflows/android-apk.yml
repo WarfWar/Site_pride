@@ -111,6 +111,23 @@ jobs:
       - name: Check improved news JavaScript
         run: node --check android/app/src/main/assets/site/news.js
 
+      - name: Verify responsive hero and natural photo backgrounds
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          site=Path('android/app/src/main/assets/site')
+          html=(site/'index.html').read_text(encoding='utf-8')
+          photo_js=(site/'photos.js').read_text(encoding='utf-8')
+          css=(site/'layout-fixes.css').read_text(encoding='utf-8')
+          assert 'layout-fixes.css' in html
+          assert 'photo-fill' in photo_js and 'object-fit:contain' in css
+          assert 'menu-042.webp' in css and (site/'photos/menu-042.webp').is_file()
+          assert 'hero-art:before' in css
+          assert 'min-width:721px' in css
+          assert 'max-width:720px' in css
+          print('PASS: tablet and phone responsive hero, full product photo with blurred color-matched backdrop')
+          PY
+
       - name: Build debug APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
@@ -181,7 +198,7 @@ jobs:
           APK=android/app/build/outputs/apk/debug/app-debug.apk
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --min-sdk-version 24 "$APK"
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | tee /tmp/pride_badging.txt
-          grep -q "name='ru.pridecafe.menu' versionCode='9' versionName='1.7.0'" /tmp/pride_badging.txt
+          grep -q "name='ru.pridecafe.menu' versionCode='10' versionName='1.7.1'" /tmp/pride_badging.txt
           SIGNER=$("$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --print-certs "$APK" | awk '/Signer #1 certificate SHA-256 digest:/ {print $NF}')
           EXPECTED=68c3ba09e49d3c998172386c295186f4143a88c319d13ab8f18461de9ba2a5c5
           test "$SIGNER" = "$EXPECTED"
@@ -190,7 +207,7 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: PrideCafe-v1.7-verified-APK
+          name: PrideCafe-v1.7.1-ui-verified-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30

@@ -7,6 +7,7 @@ function photoBox(item,imgClass,lazy,compact){
  const label=escapeHtml(item.title||'блюда');
  const message=compact ? 'Фото для примера' : 'Фото ознакомительное · подача может отличаться';
  return '<div class="photo-shell'+(compact?' compact':'')+'">'+
+        (compact?'':'<img class="photo-fill" data-fallback="'+fallback(item)+'" src="'+asset(item)+'" alt="" aria-hidden="true" loading="'+(lazy?'lazy':'eager')+'" decoding="async">')+
         '<img class="'+imgClass+'" data-fallback="'+fallback(item)+'" src="'+asset(item)+'" loading="'+(lazy?'lazy':'eager')+'" alt="Фото позиции меню Прайд: '+label+'" decoding="async">'+
         '<span class="photo-disclaimer'+(compact?' compact':'')+'">'+message+'</span>'+
         '</div>';

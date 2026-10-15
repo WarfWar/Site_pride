@@ -1,0 +1,56 @@
+
+/* v1.7 — premium photo cards, tablet hero and news layout. */
+:root{--pride-panel:#fffdfa}
+.menu-tabs{margin-bottom:28px!important}
+.pride-news{padding-top:28px!important}
+.news-heading{margin-top:12px!important}
+.menu-heading .menu-count{min-width:125px}
+.menu-heading .menu-count b{display:inline-block;vertical-align:baseline;margin-right:4px}
+.dishes{gap:20px}
+.dish{background:var(--pride-panel);border:1px solid #e7dac8;border-radius:19px!important;box-shadow:0 9px 24px rgba(37,25,12,.08);min-height:0;overflow:hidden;transition:box-shadow .2s,transform .2s}
+.dish:hover{box-shadow:0 16px 32px rgba(37,25,12,.13);transform:translateY(-2px)}
+.dish-photo{width:100%;aspect-ratio:5/4;overflow:hidden;background:radial-gradient(circle at center,#665446,#25231e)!important}
+.dish-photo>.photo-shell{height:100%;width:100%;display:grid;place-items:center;background:radial-gradient(circle at center,#4f3d2c 0%,#24221f 100%)!important}
+.dish-photo>.photo-shell>img.dish-image{display:block;min-height:0;width:100%;height:100%;object-fit:contain!important;object-position:center;transition:transform .3s}
+.dish:hover .dish-photo .dish-image{transform:scale(1.02)}
+.dish>div:not(.dish-photo){padding:18px 20px 8px!important;flex:1;min-height:0!important}
+.dish .category{color:#967247!important;margin-bottom:8px}
+.dish h3{font-size:19px;line-height:1.35;overflow-wrap:anywhere}
+.dish .weight{font-size:12px;white-space:normal;display:inline-block}
+.dish .description{font-size:12px;line-height:1.65;max-height:none;opacity:.92}
+.dish .price{padding:8px 20px 15px!important;color:#896a43;font-size:22px!important}
+.dish .cart-add{margin:0 20px 18px!important;min-height:46px;border-radius:10px}
+.dish-photo .photo-disclaimer{left:10px!important;right:auto!important;bottom:10px!important;max-width:calc(100% - 20px)!important;font-size:10px!important}
+.feature img{object-position:center}
+.feature strong{max-width:95%}
+@media(min-width:721px) and (max-width:1400px){
+  .hero-grid{min-height:0!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:25px;align-items:center}
+  .hero-copy{padding:45px 0!important;min-width:0}
+  .hero h1{font-size:clamp(43px,5.4vw,73px)!important;line-height:1.12}
+  .hero-copy>p{max-width:490px;font-size:clamp(13px,1.7vw,18px)}
+  .hero-art{min-height:0!important;align-self:center;max-width:100%;overflow:visible}
+  .hero-art>img{width:100%!important;margin:0!important;max-height:500px;object-fit:contain}
+  .hero-stamp{width:95px!important;height:95px!important;bottom:0!important;right:0!important}
+  .hero-bottom{margin-top:36px!important}
+}
+@media(min-width:721px) and (max-width:980px) and (orientation:portrait){
+  .hero-grid{grid-template-columns:1fr!important;gap:4px}
+  .hero-copy{padding:36px 0 4px!important}
+  .hero-art{margin:0 auto;max-width:640px}
+  .hero-art>img{max-height:360px}
+  .hero-stamp{right:0;bottom:12px}
+}
+@media(max-width:720px){
+  .menu-tabs{margin-bottom:20px!important}
+  .pride-news{padding-top:20px!important}
+  .dish-photo{aspect-ratio:4/3}
+  .dish h3{font-size:17px}
+  .dishes{gap:17px}
+  .dish .price{font-size:20px!important}
+}
+@media(max-width:460px){
+  .dish-photo{aspect-ratio:1.30}
+  .dish .cart-add{margin:0 15px 15px!important}
+  .dish>div:not(.dish-photo){padding:16px 15px 8px!important}
+  .dish .price{padding:8px 15px 14px!important}
+}

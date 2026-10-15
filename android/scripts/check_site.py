@@ -5,9 +5,9 @@ import pathlib
 SITE=pathlib.Path(__file__).resolve().parents[1]/'app/src/main/assets/site'
 food=json.loads((SITE/'data/menu.json').read_text(encoding='utf-8'))
 bar=json.loads((SITE/'data/bar.json').read_text(encoding='utf-8'))
-assert len(food)==125, f'{len(food)} kitchen entries'
-assert len(bar)==113, f'{len(bar)} bar entries'
-assert len({x['image'] for x in bar})==113
+assert len(food)==108, f'{len(food)} kitchen entries'
+assert len(bar)==106, f'{len(bar)} bar entries'
+assert all((SITE/x['image']).is_file() for x in bar)
 for item in food:
     assert item['image'].startswith('./photos/')
     assert (SITE/item['image']).is_file(),item['image']

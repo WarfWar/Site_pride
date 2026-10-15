@@ -28,15 +28,6 @@
   },
   {
     "category": "Водка",
-    "title": "Финляндия",
-    "weight": "50мл",
-    "description": "",
-    "price": "320",
-    "image": "./bar_photos/menu-124.webp",
-    "source_image": "/assets/menu-124.webp"
-  },
-  {
-    "category": "Водка",
     "title": "Белуга",
     "weight": "50мл",
     "description": "",
@@ -61,6 +52,14 @@
     "price": "240",
     "image": "./bar_photos/menu-127.webp",
     "source_image": "/assets/menu-127.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Старый Кахети 3 года",
+    "weight": "50мл",
+    "price": "290",
+    "description": "Фотография марки отсутствует; изображение иллюстративное.",
+    "image": "./bar_photos/menu-127.webp"
   },
   {
     "category": "Коньяк и бренди",
@@ -678,7 +677,7 @@
     "category": "Лимонады",
     "title": "Яблочный штрудель",
     "weight": "0,4л",
-    "description": "пюре яблоко, сироп ваниль, яблочный сок, вода газ., яблоко",
+    "description": "пюре яблоко, сироп ваниль, яблочный сок, вода газ., яблоко · Также 1 л — 790 ₽",
     "price": "370",
     "image": "./bar_photos/menu-195.webp",
     "source_image": "/assets/menu-195.webp"
@@ -687,7 +686,7 @@
     "category": "Лимонады",
     "title": "Тропиканка",
     "weight": "0,4л",
-    "description": "пюре манго-маракуйя, лимонный фреш, вода газ., апельсин, лайм, мята",
+    "description": "пюре манго-маракуйя, лимонный фреш, вода газ., апельсин, лайм, мята · Также 1 л — 780 ₽",
     "price": "370",
     "image": "./bar_photos/menu-196.webp",
     "source_image": "/assets/menu-196.webp"
@@ -696,7 +695,7 @@
     "category": "Лимонады",
     "title": "Чистая страсть",
     "weight": "0,4л",
-    "description": "сироп карамель, лимонный фреш, сок апельсин, пюре маракуйи, вода газ., апельсин",
+    "description": "сироп карамель, лимонный фреш, сок апельсин, пюре маракуйи, вода газ., апельсин · Также 1 л — 760 ₽",
     "price": "360",
     "image": "./bar_photos/menu-197.webp",
     "source_image": "/assets/menu-197.webp"
@@ -705,7 +704,7 @@
     "category": "Лимонады",
     "title": "Малиново-лаймовый",
     "weight": "0,4л",
-    "description": "пюре малины, лайм, лимонный фреш, вода газ., мята",
+    "description": "пюре малины, лайм, лимонный фреш, вода газ., мята · Также 1 л — 760 ₽",
     "price": "360",
     "image": "./bar_photos/menu-198.webp",
     "source_image": "/assets/menu-198.webp"
@@ -714,7 +713,7 @@
     "category": "Лимонады",
     "title": "Облепиховый",
     "weight": "0,4л",
-    "description": "облепиха, сироп ваниль, вода газ., мята",
+    "description": "облепиха, сироп ваниль, вода газ., мята · Также 1 л — 790 ₽",
     "price": "380",
     "image": "./bar_photos/menu-199.webp",
     "source_image": "/assets/menu-199.webp"
@@ -723,7 +722,7 @@
     "category": "Лимонады",
     "title": "Ягодный",
     "weight": "0,4л",
-    "description": "пюре малина, пюре клубника, сироп гренадин, вода газ.",
+    "description": "пюре малина, пюре клубника, сироп гренадин, вода газ. · Также 1 л — 760 ₽",
     "price": "360",
     "image": "./bar_photos/menu-200.webp",
     "source_image": "/assets/menu-200.webp"
@@ -732,7 +731,7 @@
     "category": "Лимонады",
     "title": "Малина-маракуйя",
     "weight": "0,4л",
-    "description": "пюре малины, пюре маракуйи, апельсин, вода газ., мята",
+    "description": "пюре малины, пюре маракуйи, апельсин, вода газ., мята · Также 1 л — 760 ₽",
     "price": "360",
     "image": "./bar_photos/menu-201.webp",
     "source_image": "/assets/menu-201.webp"
@@ -741,7 +740,7 @@
     "category": "Лимонады",
     "title": "Мохито б/а",
     "weight": "0,4л",
-    "description": "мята, лайм, спрайт",
+    "description": "мята, лайм, спрайт · Также 1 л — 760 ₽",
     "price": "380",
     "image": "./bar_photos/menu-202.webp",
     "source_image": "/assets/menu-202.webp"
@@ -812,7 +811,7 @@
   {
     "category": "Кофе",
     "title": "Какао",
-    "weight": "350мл",
+    "weight": "280мл",
     "description": "",
     "price": "300",
     "image": "./bar_photos/menu-210.webp",
@@ -820,8 +819,8 @@
   },
   {
     "category": "Кофе",
-    "title": "Кокосовый бум",
-    "weight": "350мл",
+    "title": "Райское наслаждение",
+    "weight": "280мл",
     "description": "",
     "price": "350",
     "image": "./bar_photos/menu-211.webp",
@@ -839,8 +838,8 @@
   {
     "category": "Чай",
     "title": "Чёрный",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-213.webp",
     "source_image": "/assets/menu-213.webp"
@@ -848,8 +847,8 @@
   {
     "category": "Чай",
     "title": "Зелёный",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-214.webp",
     "source_image": "/assets/menu-214.webp"
@@ -857,8 +856,8 @@
   {
     "category": "Чай",
     "title": "Жасминовый",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-215.webp",
     "source_image": "/assets/menu-215.webp"
@@ -866,8 +865,8 @@
   {
     "category": "Чай",
     "title": "Эрл Грей",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-216.webp",
     "source_image": "/assets/menu-216.webp"
@@ -875,8 +874,8 @@
   {
     "category": "Чай",
     "title": "Молочный Пуэр",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-217.webp",
     "source_image": "/assets/menu-217.webp"
@@ -884,8 +883,8 @@
   {
     "category": "Чай",
     "title": "Клубника-манго",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-218.webp",
     "source_image": "/assets/menu-218.webp"
@@ -893,8 +892,8 @@
   {
     "category": "Чай",
     "title": "Имбирь-лимон",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-219.webp",
     "source_image": "/assets/menu-219.webp"
@@ -902,8 +901,8 @@
   {
     "category": "Чай",
     "title": "Каркадэ",
-    "weight": "0,5л",
-    "description": "",
+    "weight": "0,4 л",
+    "description": "Также 0,7 л — 350 ₽",
     "price": "200",
     "image": "./bar_photos/menu-220.webp",
     "source_image": "/assets/menu-220.webp"
@@ -952,68 +951,5 @@
     "price": "450",
     "image": "./bar_photos/menu-225.webp",
     "source_image": "/assets/menu-225.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Алазанская Долина (белое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "1600",
-    "image": "./bar_photos/menu-226.webp",
-    "source_image": "/assets/menu-226.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Алазанская Долина (красное)",
-    "weight": "750мл",
-    "description": "",
-    "price": "1600",
-    "image": "./bar_photos/menu-227.webp",
-    "source_image": "/assets/menu-227.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Хванчкара (красное полусладкое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "3500",
-    "image": "./bar_photos/menu-228.webp",
-    "source_image": "/assets/menu-228.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Саперави (красное сухое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "2150",
-    "image": "./bar_photos/menu-229.webp",
-    "source_image": "/assets/menu-229.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Цинандали (белое сухое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "1600",
-    "image": "./bar_photos/menu-230.webp",
-    "source_image": "/assets/menu-230.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Пино Гриджио (белое сухое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "2600",
-    "image": "./bar_photos/menu-231.webp",
-    "source_image": "/assets/menu-231.webp"
-  },
-  {
-    "category": "Винная карта",
-    "title": "Рислинг (белое полусухое)",
-    "weight": "750мл",
-    "description": "",
-    "price": "2900",
-    "image": "./bar_photos/menu-232.webp",
-    "source_image": "/assets/menu-232.webp"
   }
 ]

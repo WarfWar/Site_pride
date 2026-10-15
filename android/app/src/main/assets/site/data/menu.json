@@ -113,7 +113,7 @@
   },
   {
     "category": "Горячие закуски",
-    "title": "Сердечки в соусе \"Тай\" \"",
+    "title": "Сердечки в соусе «Тай»",
     "weight": "350г",
     "description": "Перец болгарский, лук крымский, кунжут, соус паназиатский",
     "price": "590",
@@ -170,17 +170,17 @@
   {
     "category": "Салаты",
     "title": "Салат с утиной грудкой",
-    "weight": "",
+    "weight": "280г",
     "description": "Микс салата, карамелизированная груша, жареная утиная грудка, апельсин, соус медовый,соус касис, тыквенная семечка",
-    "price": "",
+    "price": "680",
     "image": "./photos/menu-021.webp"
   },
   {
     "category": "Салаты",
     "title": "Салат с куриной печенью",
-    "weight": "",
+    "weight": "280г",
     "description": "Микс салата, куриная печень, грейпфрут, томаты черри, соус медовый",
-    "price": "",
+    "price": "680",
     "image": "./photos/menu-022.webp"
   },
   {
@@ -284,7 +284,7 @@
     "title": "Картофель по-домашнему со свининой",
     "weight": "260г",
     "description": "",
-    "price": "520",
+    "price": "490",
     "image": "./photos/menu-034.webp"
   },
   {
@@ -292,7 +292,7 @@
     "title": "Стейк \"Стриплоин\"",
     "weight": "260г/120г",
     "description": "Тонкий край телятины, с насыщенным вкусом и ароматом, подается с мятым картофелем и соусом из запеченного чеснока и ореха Рекомендуемая степень прожарки - \"Медиум\"",
-    "price": "1240",
+    "price": "1290",
     "image": "./photos/menu-035.webp"
   },
   {
@@ -305,8 +305,8 @@
   },
   {
     "category": "Рыба",
-    "title": "Филе судака на луковой подушке со сливочным соусом 160\\50",
-    "weight": "",
+    "title": "Филе судака на луковой подушке со сливочным соусом",
+    "weight": "160г/50г",
     "description": "",
     "price": "820",
     "image": "./photos/menu-037.webp"
@@ -316,7 +316,7 @@
     "title": "Удон — телятина",
     "weight": "300г",
     "description": "",
-    "price": "680",
+    "price": "630",
     "image": "./photos/menu-038.webp"
   },
   {
@@ -332,7 +332,7 @@
     "title": "Удон — креветка",
     "weight": "300г",
     "description": "",
-    "price": "660",
+    "price": "680",
     "image": "./photos/menu-040.webp"
   },
   {
@@ -340,7 +340,7 @@
     "title": "Паста карбонара",
     "weight": "300г",
     "description": "Сливочная паста с беконом и яичным желтком",
-    "price": "380",
+    "price": "490",
     "image": "./photos/menu-041.webp"
   },
   {
@@ -429,7 +429,7 @@
     "weight": "320г",
     "description": "",
     "price": "720",
-    "image": "./photos/menu-051.webp"
+    "image": "./photos/menu-079.webp"
   },
   {
     "category": "Роллы",
@@ -437,7 +437,7 @@
     "weight": "320г",
     "description": "",
     "price": "680",
-    "image": "./photos/menu-052.webp"
+    "image": "./photos/menu-056.webp"
   },
   {
     "category": "Роллы",
@@ -445,7 +445,7 @@
     "weight": "320г",
     "description": "",
     "price": "700",
-    "image": "./photos/menu-053.webp"
+    "image": "./photos/menu-057.webp"
   },
   {
     "category": "Роллы",
@@ -453,7 +453,7 @@
     "weight": "320г",
     "description": "",
     "price": "710",
-    "image": "./photos/menu-054.webp"
+    "image": "./photos/menu-058.webp"
   },
   {
     "category": "Роллы",
@@ -514,16 +514,16 @@
   {
     "category": "Роллы",
     "title": "Суши-бургер с тунцом",
-    "weight": "",
-    "description": "",
+    "weight": "330г",
+    "description": "Суши-бургер в панировке, как на образце из меню. Фото иллюстративное; фактическая подача может отличаться.",
     "price": "740",
     "image": "./photos/menu-062.webp"
   },
   {
     "category": "Роллы",
     "title": "Суши-бургер с креветкой",
-    "weight": "",
-    "description": "",
+    "weight": "330г",
+    "description": "Суши-бургер в панировке, как на образце из меню. Фото иллюстративное; фактическая подача может отличаться.",
     "price": "820",
     "image": "./photos/menu-063.webp"
   },
@@ -577,7 +577,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Горячие роллы",
+    "title": "Горячие — Креветка",
     "weight": "330г",
     "description": "- Креветка",
     "price": "690",
@@ -585,7 +585,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Мидия",
+    "title": "Горячие — Мидия",
     "weight": "330г",
     "description": "",
     "price": "580",
@@ -593,7 +593,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Угорь",
+    "title": "Горячие — Угорь",
     "weight": "330г",
     "description": "",
     "price": "680",
@@ -601,7 +601,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Лосось",
+    "title": "Горячие — Лосось",
     "weight": "330г",
     "description": "",
     "price": "690",
@@ -609,7 +609,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Тунец",
+    "title": "Горячие — Тунец",
     "weight": "330г",
     "description": "",
     "price": "630",
@@ -617,7 +617,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Запеченные роллы",
+    "title": "Запечённые — Угорь",
     "weight": "330г",
     "description": "- Угорь",
     "price": "690",
@@ -625,7 +625,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Лосось",
+    "title": "Запечённые — Лосось",
     "weight": "330г",
     "description": "",
     "price": "780",
@@ -633,7 +633,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Тунец",
+    "title": "Запечённые — Тунец",
     "weight": "330г",
     "description": "",
     "price": "620",
@@ -641,7 +641,7 @@
   },
   {
     "category": "Роллы",
-    "title": "Калифорния — Креветка",
+    "title": "Запечённые — Креветка",
     "weight": "330г",
     "description": "",
     "price": "700",
@@ -649,171 +649,35 @@
   },
   {
     "category": "Сеты",
-    "title": "Сет \"Крюгер\" +",
-    "weight": "",
-    "description": "",
+    "title": "Сет «Крюгер»",
+    "weight": "1040 г / 120 г / 40 г",
     "price": "3900",
+    "description": "Филадельфия с лососем · ролл с лососем и авокадо · ролл с жареным окунем · ролл с тунцом · горячий с окунем · горячий с угрём · салат «Чука» с ореховым соусом.",
     "image": "./photos/sushi-set.webp"
   },
   {
     "category": "Сеты",
-    "title": "- Филадельфия с лососем",
-    "weight": "320г",
-    "description": "1840\\120г\\48шт - Ролл с лососем и авокадо 230г",
-    "price": "",
-    "image": "./photos/menu-079.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Ролл с жареным окунем",
-    "weight": "290г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-080.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Ролл с тунцом",
-    "weight": "340г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-081.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с окунем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-082.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с угрем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-083.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Салат \"Чука\" с ореховым соусом",
-    "weight": "120г",
-    "description": "2070г/120г/ 48шт. Сет \"Этоша\"",
+    "title": "Сет «Эйфория»",
+    "weight": "2070 г / 120 г / 40 г",
     "price": "3700",
-    "image": "./photos/menu-084.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Запеченный с крабом",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-085.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Запеченный с креветкой",
-    "weight": "320г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-086.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Запеченный с угрем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
+    "description": "Запечённый с крабом · запечённый с креветкой · запечённый с угрём · горячий с лососем · горячий с мидией · горячий с окунем · салат «Чука» с ореховым соусом.",
     "image": "./photos/menu-087.webp"
   },
   {
     "category": "Сеты",
-    "title": "- Горячий с лососем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-088.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с мидией",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-089.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с окунем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-090.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Салат \"Чука\" с ореховым соусом",
-    "weight": "120г",
-    "description": "900г/32шт. Сет \"Чоба\"",
+    "title": "Сет «Чоба»",
+    "weight": "900 г / 32 шт.",
     "price": "1950",
-    "image": "./photos/menu-091.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Филадельфия с лососем",
-    "weight": "320г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-092.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с окунем в унаги",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-093.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Мак с лососем, мак с огурцом",
-    "weight": "240г",
-    "description": "1640г/ 40шт. Сет \"Эддо\"",
-    "price": "",
+    "description": "Филадельфия с лососем · горячий с окунем в унаги · маки с лососем и маки с огурцом.",
     "image": "./photos/menu-094.webp"
   },
   {
     "category": "Сеты",
-    "title": "- Ролл с лососем и окунем с начинкой из мидий и крем-сыром",
-    "weight": "320г",
-    "description": "- Ролл с авокадо и начинкой из снежного краба 330г",
+    "title": "Сет «Эддо»",
+    "weight": "1640 г / 40 шт.",
     "price": "3200",
+    "description": "Ролл с лососем и окунем с начинкой из мидий и крем-сыра · ролл с авокадо и начинкой из снежного краба · горячий с тунцом · горячий с мидией · горячий с окунем.",
     "image": "./photos/menu-095.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с тунцом",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-096.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с мидией",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-097.webp"
-  },
-  {
-    "category": "Сеты",
-    "title": "- Горячий с окунем",
-    "weight": "330г",
-    "description": "",
-    "price": "",
-    "image": "./photos/menu-098.webp"
   },
   {
     "category": "Гарниры",
@@ -852,7 +716,7 @@
     "title": "Булочка пшеничная",
     "weight": "1шт.",
     "description": "",
-    "price": "",
+    "price": "40",
     "image": "./photos/menu-103.webp"
   },
   {
@@ -860,7 +724,7 @@
     "title": "Хлеб Пшеничный",
     "weight": "60г",
     "description": "",
-    "price": "",
+    "price": "40",
     "image": "./photos/menu-104.webp"
   },
   {
@@ -868,7 +732,7 @@
     "title": "Хлеб Бородинский",
     "weight": "60г",
     "description": "",
-    "price": "",
+    "price": "40",
     "image": "./photos/menu-105.webp"
   },
   {
@@ -876,7 +740,7 @@
     "title": "Фокачча с томатами и моцареллой",
     "weight": "1шт.",
     "description": "",
-    "price": "",
+    "price": "200",
     "image": "./photos/menu-106.webp"
   },
   {
@@ -884,7 +748,7 @@
     "title": "Фокачча с ароматными травами",
     "weight": "1шт.",
     "description": "",
-    "price": "",
+    "price": "120",
     "image": "./photos/menu-107.webp"
   },
   {
@@ -892,7 +756,7 @@
     "title": "Кетчуп",
     "weight": "50г",
     "description": "",
-    "price": "",
+    "price": "100",
     "image": "./photos/menu-108.webp"
   },
   {
@@ -900,7 +764,7 @@
     "title": "Чесночный",
     "weight": "50г",
     "description": "",
-    "price": "",
+    "price": "100",
     "image": "./photos/menu-109.webp"
   },
   {
@@ -908,7 +772,7 @@
     "title": "Дорблю",
     "weight": "50г",
     "description": "",
-    "price": "",
+    "price": "150",
     "image": "./photos/menu-110.webp"
   },
   {
@@ -916,7 +780,7 @@
     "title": "Сырный",
     "weight": "50г",
     "description": "",
-    "price": "",
+    "price": "100",
     "image": "./photos/menu-111.webp"
   },
   {
@@ -924,7 +788,7 @@
     "title": "Сладкий чили",
     "weight": "50г",
     "description": "",
-    "price": "",
+    "price": "100",
     "image": "./photos/menu-112.webp"
   },
   {
@@ -988,7 +852,7 @@
     "title": "Тирамису с маскарпоне",
     "weight": "130г",
     "description": "",
-    "price": "",
+    "price": "440",
     "image": "./photos/menu-119.webp"
   },
   {

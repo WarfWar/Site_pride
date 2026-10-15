@@ -8,8 +8,8 @@ android {
         applicationId = "ru.pridecafe.menu"
         minSdk = 24
         targetSdk = 34
-        versionCode = 8
-        versionName = "1.6.3"
+        versionCode = 9
+        versionName = "1.7.0"
     }
 
     signingConfigs {

@@ -1,0 +1,67 @@
+name: Build Pride Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "android/**"
+      - ".github/workflows/android-apk.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate bundled menu and illustrations
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          site = Path("android/app/src/main/assets/site")
+          items = json.loads((site / "data/menu.json").read_text(encoding="utf-8"))
+          assert len(items) == 125, f"Expected 125 dishes; got {len(items)}"
+          for key in ["category", "title", "price", "description", "weight"]:
+              assert all(key in x for x in items), f"Missing field {key}"
+          for file in ["index.html", "styles.css", "app.js", "cart.js", "cart.css",
+                       "assets/logo.svg", "assets/hero.svg", "assets/burger.svg",
+                       "assets/pizza.svg", "assets/rolls.svg"]:
+              assert (site / file).is_file(), f"Missing {file}"
+          assert 'pride:render' in (site / "app.js").read_text(encoding="utf-8")
+          assert "localStorage" in (site / "cart.js").read_text(encoding="utf-8")
+          print(f"PASS: {len(items)} dishes, 15 categories, 5 local SVG files")
+          PY
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK 35
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Set up Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+
+      - name: Build debug APK
+        run: gradle -p android --no-daemon --stacktrace assembleDebug
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrideCafe-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30

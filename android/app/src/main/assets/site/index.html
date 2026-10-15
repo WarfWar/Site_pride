@@ -8,6 +8,7 @@
   <link rel="icon" href="./assets/pride-brand.png" type="image/png">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./cart.css">
+  <link rel="stylesheet" href="./enhancements.css">
   <title>Прайд — кафе в Волновахе | Меню, бар и новости</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
     <p>Любимые закуски, горячее, роллы, пицца, коктейли, кофе и чай — всё собрано в одном месте. Сохраняйте понравившееся в корзину и возвращайтесь к выбору позже.</p>
   </section>
   <section class="highlights container" aria-label="Популярные разделы">
-    <a href="#menu" data-feature="Бургеры" class="feature"><img src="./assets/burger.svg" alt="Иллюстрация бургера"><span class="feature-label">ЛЮБИМАЯ КЛАССИКА</span><strong>Бургеры</strong><span class="feature-arrow">↗</span></a>
+    <a href="#menu" data-feature="Бургеры" class="feature"><img src="./photos/menu-042.webp" alt="Фотография бургера из меню Прайд"><span class="feature-label">ЛЮБИМАЯ КЛАССИКА</span><strong>Бургеры</strong><span class="feature-arrow">↗</span></a>
     <a href="#menu" data-pride-tab="bar" class="feature"><img src="./bar_photos/clover-club.webp" alt="Фотография коктейля"><span class="feature-label">БАРНАЯ КАРТА</span><strong>Коктейли и напитки</strong><span class="feature-arrow">↗</span></a>
     <a href="#menu" data-pride-tab="news" class="feature"><img src="./assets/pride-brand.png" alt="Логотип Прайд"><span class="feature-label">ВСЕГДА НА СВЯЗИ</span><strong>Новости кафе</strong><span class="feature-arrow">↗</span></a>
   </section>
@@ -45,9 +46,9 @@
     <div class="container">
       <div class="menu-heading"><div><span class="eyebrow">ПРИЛОЖЕНИЕ КАФЕ</span><h2>Меню «Прайд»</h2></div><div class="menu-heading-side"><p>Переключайтесь между кухней, барной картой и новостями. Добавляйте понравившиеся блюда и напитки в корзину.</p><div class="stats"><b id="total-count">0</b><span>позиций всего</span></div></div></div>
       <div class="menu-tabs" role="tablist" aria-label="Раздел приложения">
-        <button id="tab-kitchen" role="tab" aria-selected="true" class="selected">Кухня</button>
-        <button id="tab-bar" role="tab" aria-selected="false">Бар</button>
-        <button id="tab-news" role="tab" aria-selected="false">Новости</button>
+        <button id="tab-kitchen" role="tab" aria-selected="true" class="selected"><span class="tab-icon" aria-hidden="true">🍽️</span><span class="tab-copy"><b>Кухня</b><small>Основное меню</small></span></button>
+        <button id="tab-bar" role="tab" aria-selected="false"><span class="tab-icon" aria-hidden="true">🥂</span><span class="tab-copy"><b>Бар</b><small>Напитки</small></span></button>
+        <button id="tab-news" role="tab" aria-selected="false"><span class="tab-icon" aria-hidden="true">✨</span><span class="tab-copy"><b>Новости</b><small>Telegram</small></span></button>
       </div>
       <div id="kitchen" class="tab-panel">
         <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Найти блюдо в меню..." aria-label="Поиск по кухне"></label><button id="clear" type="button" class="clear" hidden>Сбросить</button></div>

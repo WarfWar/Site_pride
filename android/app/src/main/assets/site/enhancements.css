@@ -1,0 +1,40 @@
+
+/* Pride 1.6.3 — elegant navigation and fully readable Telegram news. */
+.menu-tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin-top:32px!important;border-bottom:0!important}
+.menu-tabs>button{min-width:0;min-height:90px;display:flex!important;align-items:center;gap:12px;padding:14px 16px!important;text-align:left!important;border-radius:17px!important;border:1px solid #dcd1c0!important;border-bottom:1px solid #dcd1c0!important;background:#fffdf9!important;color:#49443b!important;box-shadow:0 8px 22px #2f271214;transition:background .2s,transform .2s}
+.menu-tabs>button.selected{border-color:#242721!important;background:#242721!important;color:#fff!important;box-shadow:0 12px 28px #241d2040}
+.menu-tabs>button:focus-visible{outline:3px solid #cfac78;outline-offset:2px}
+.menu-tabs .tab-icon{width:43px;height:43px;flex:none;display:grid;place-items:center;font-size:23px;background:#f2e7d6;border-radius:12px}
+.menu-tabs>button.selected .tab-icon{background:#45483f}
+.menu-tabs .tab-copy{display:flex;flex-direction:column;min-width:0;gap:5px}
+.menu-tabs .tab-copy b{font-size:17px;line-height:1.15}
+.menu-tabs .tab-copy small{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#999082;line-height:1.2;white-space:normal}
+.menu-tabs>button.selected small{color:#d5b17d}
+.feature{border-radius:16px;overflow:hidden;box-shadow:0 12px 34px #0002}
+.feature img{width:100%;height:100%;object-fit:cover}
+.feature strong{line-height:1.1;text-shadow:0 2px 12px #000a}
+.pride-news .news-heading{border-radius:20px;background:linear-gradient(130deg,#1e201c,#36352c)}
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.news-card{min-width:0;background:#fff;border:1px solid #e5dac9;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;padding:0;gap:0;box-shadow:0 10px 24px #3c28180f}
+.news-image-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;background:#24241f}
+.news-image-wrap>img{display:block;width:100%;height:100%;object-fit:cover}
+.news-card-inner{display:flex;flex-direction:column;gap:12px;padding:19px 20px 21px;min-width:0}
+.news-card .news-date{color:#a17c4e;font-size:11px;font-weight:800}
+.news-card h4{margin:0;font-size:19px;line-height:1.4;color:#25241f;overflow-wrap:anywhere}
+.news-body{color:#625d54;font-size:13px;line-height:1.65;white-space:pre-line;overflow-wrap:anywhere;margin:0!important;max-height:none!important}
+.news-card.is-collapsible:not(.expanded) .news-body{max-height:225px!important;overflow:hidden!important;position:relative}
+.news-card.is-collapsible:not(.expanded) .news-body:after{content:"";position:absolute;left:0;right:0;bottom:0;height:52px;background:linear-gradient(transparent,#fff)}
+.news-card.expanded .news-body{max-height:none!important;overflow:visible!important}
+.news-card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:4px}
+.news-expand{border:1px solid #d7b787;border-radius:999px;background:#fff5e6;color:#77522a;padding:10px 15px;font-weight:800;font-size:12px;cursor:pointer;min-height:40px}
+.news-expand:focus-visible{outline:2px solid #a47c48}
+.news-card-actions a{font-size:12px;text-decoration:underline;color:#82603a;font-weight:800}
+.news-date{letter-spacing:.03em}
+@media(max-width:950px){.news-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.menu-tabs{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;margin-top:25px!important}
+.menu-tabs>button{flex-direction:column!important;align-items:flex-start!important;justify-content:center;gap:9px;padding:10px 8px!important;min-height:84px}
+.menu-tabs .tab-icon{width:33px;height:33px;font-size:17px;border-radius:9px}
+.menu-tabs .tab-copy{gap:3px}.menu-tabs .tab-copy b{font-size:15px}.menu-tabs .tab-copy small{font-size:9px;line-height:1.3}
+.feature{border-radius:13px}
+.news-card-inner{padding:16px}.news-card h4{font-size:17px}}
+@media(max-width:370px){.menu-tabs>button{padding:9px 6px!important}.menu-tabs .tab-copy b{font-size:14px}.menu-tabs .tab-copy small{font-size:8px}}

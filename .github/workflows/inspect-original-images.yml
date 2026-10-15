@@ -45,6 +45,36 @@ jobs:
           print("next_data_path:",bool(re.search(r'__NEXT_DATA__|_next/static|/_astro/|/assets/',content)))
           (out/"image-report.json").write_text(json.dumps({"url":url,"tag_sources":p.urls,"total":len(p.urls)},ensure_ascii=False,indent=2),encoding="utf-8")
           PY
+      - name: Fetch original menu JavaScript, styles and image references
+        run: |
+          python3 - <<'PY'
+          import urllib.request, pathlib, re, json, html
+          from urllib.parse import urljoin
+          base="https://cafe-pride-menu.savory-heron-9771.chatgpt.site/"
+          out=pathlib.Path("inspection");out.mkdir(exist_ok=True)
+          paths=["app.js","styles.css"]
+          contents={}
+          for path in paths:
+              u=urljoin(base,path)
+              req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"})
+              with urllib.request.urlopen(req,timeout=35) as r:data=r.read(4_000_000)
+              s=data.decode("utf-8",errors="replace")
+              contents[path]=s;(out/path).write_text(s,encoding="utf-8")
+              print(path,"bytes:",len(data),"preview:",s[:900].replace(chr(10)," "))
+          alltext="\n".join(contents.values())
+          pats=[
+             r'(?:(?:https?:)?//[^"\\\\\s<>]+\\.(?:jpg|png|webp|jpeg)(?:\\?[^"\\\\\s<>]*)?)',
+             r'/assets/[^"\\\\\s<>]+\\.(?:jpg|png|webp|jpeg)',
+             r'images\\.unsplash\\.com/[^"\\\\\s<>]+'
+          ]
+          hits=[]
+          for pat in pats:
+              for match in re.findall(pat,alltext,flags=re.I):
+                  if match not in hits: hits.append(match)
+          print("ASSET REFERENCES:",len(hits))
+          for x in hits[:170]:print("ASSET:",x[:350])
+          (out/"asset-refs.json").write_text(json.dumps(hits,ensure_ascii=False,indent=2),encoding="utf-8")
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:

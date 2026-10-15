@@ -1,0 +1,132 @@
+{
+  "notice": "Примерные фотографии с Unsplash. Реальный вид блюд кафе «Прайд» может отличаться.",
+  "license": "https://unsplash.com/license",
+  "photos": [
+    {
+      "key": "burger",
+      "photo": "photo-1568901346375-23c9450c58cd",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com/photos/close-up-photo-cheeseburger-0QO4LHRJYjA"
+    },
+    {
+      "key": "burger_alt",
+      "photo": "photo-1534790566855-4cb788d389ec",
+      "photographer": "Erik Odiin",
+      "source": "https://unsplash.com/photos/close-up-photography-of-burger-with-patty-and-slice-cheese-F_xGk7V0Xbc"
+    },
+    {
+      "key": "pizza",
+      "photo": "photo-1513104890138-7c749659a591",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "rolls",
+      "photo": "photo-1579871494447-9811cf80d66c",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "rolls_alt",
+      "photo": "photo-1757478076604-aa4da9abb7dd",
+      "photographer": "Ruth Bourke",
+      "source": "https://unsplash.com/photos/salmon-sushi-rolls-and-sashimi-slices-of-fresh-salmon-IYNXduZctdM"
+    },
+    {
+      "key": "salad",
+      "photo": "photo-1512621776951-a57141f2eefd",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "salad_chicken",
+      "photo": "photo-1546069901-ba9599a7e63c",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "steak",
+      "photo": "photo-1544025162-d76694265947",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "grilled_meat",
+      "photo": "photo-1555939594-58d7cb561ad1",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "fish",
+      "photo": "photo-1707576517985-a2e912cca325",
+      "photographer": "You Le",
+      "source": "https://unsplash.com/photos/a-white-plate-topped-with-fish-and-vegetables-CAiTZ4kywA4"
+    },
+    {
+      "key": "shrimp",
+      "photo": "photo-1559847844-5315695dadae",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "soup",
+      "photo": "photo-1673646961345-045592136147",
+      "photographer": "Natalia Gusakova",
+      "source": "https://unsplash.com/photos/a-bowl-of-tomato-soup-surrounded-by-tomatoes-and-leaves-cPlGDZn3Knw"
+    },
+    {
+      "key": "pasta",
+      "photo": "photo-1588013273468-315fd88ea34c",
+      "photographer": "Zoran Borojevic",
+      "source": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-plate--5FECW242og"
+    },
+    {
+      "key": "noodles",
+      "photo": "photo-1637241612435-afd8c1a91801",
+      "photographer": "Markus Winkler",
+      "source": "https://unsplash.com/photos/a-bowl-of-ramen-noodles-on-a-table-QHqMxY_B1ng"
+    },
+    {
+      "key": "fries",
+      "photo": "photo-1529259266118-cf22737f713f",
+      "photographer": "JC Gellidon",
+      "source": "https://unsplash.com/photos/french-fries-mFPlHlDLtUA"
+    },
+    {
+      "key": "bread",
+      "photo": "photo-1509440159596-0249088772ff",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "dessert",
+      "photo": "photo-1565958011703-44f9829ba187",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "chocolate",
+      "photo": "photo-1578985545062-69928b1d9587",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    },
+    {
+      "key": "cold_board",
+      "photo": "photo-1758972573607-509448e9f3e4",
+      "photographer": "Luna Wang",
+      "source": "https://unsplash.com/photos/charcuterie-board-with-cured-meats-cheese-and-pickles-EK9FWSXIS3k"
+    },
+    {
+      "key": "cheese_board",
+      "photo": "photo-1773245149417-5b7414fec7d5",
+      "photographer": "Jametlene Reskp",
+      "source": "https://unsplash.com/photos/cheese-platter-with-assorted-nuts-and-fruits-3HokyMmpzPw"
+    },
+    {
+      "key": "vegetables",
+      "photo": "photo-1547592180-85f173990554",
+      "photographer": "Unsplash contributor",
+      "source": "https://unsplash.com"
+    }
+  ]
+}

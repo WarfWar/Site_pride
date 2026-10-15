@@ -17,19 +17,28 @@ OUT = SITE / 'bar_photos'
 HOST = 'https://cafe-pride-menu.savory-heron-9771.chatgpt.site'
 OUT.mkdir(parents=True, exist_ok=True)
 items = json.loads(BAR.read_text(encoding='utf-8'))
-assert len(items) == 113, f'Wrong number of bar items: {len(items)}'
-assert len(set(x['image'] for x in items)) == 113, 'Duplicate drink photo filenames!'
-
+assert len(items) == 106, f'Wrong number of curated bar items: {len(items)}'
+# Keep all original images in the APK even after removing duplicate products.
+req=urllib.request.Request(HOST+'/menu.json',headers={'User-Agent':'Mozilla/5.0 PrideAndroid/1.7'})
+with urllib.request.urlopen(req,timeout=40) as response:
+    original = json.loads(response.read(2500000).decode('utf-8'))
+source_items = [x for group in original['bar'] for x in group['items']]
+assert len(source_items)==113, f'Original site has {len(source_items)} bar entries'
+all_names={x.get('image','').rsplit('/',1)[-1] for x in source_items}
+assert len(all_names)==113, 'Original bar photo names must be unique'
+for item in items:
+    assert item['image'].startswith('./bar_photos/'), item
+    assert item['image'].rsplit('/',1)[-1] in all_names, item
 def valid(data):
     return len(data) > 450 and data[:4] == b'RIFF' and data[8:12] == b'WEBP'
 
 def get(index_item):
     idx, item = index_item
-    path = item['source_image']
+    path = item['image']
     assert path.startswith('/assets/') and path.endswith('.webp'), (idx, path)
     name = path.rsplit('/', 1)[1]
     expected = './bar_photos/' + name
-    assert item['image'] == expected, (idx, item['image'], expected)
+    assert './bar_photos/'+name == expected
     output = OUT / name
     if output.is_file() and valid(output.read_bytes()):
         return idx, True, 'cached'
@@ -52,10 +61,10 @@ def get(index_item):
     return idx, False, error
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
-    results = sorted(pool.map(get, enumerate(items)))
+    results = sorted(pool.map(get, enumerate(source_items)))
 for i, ok, info in results:
-    print(('OK  ' if ok else 'FAIL') + f' [{i:03d}] {items[i]["title"]}: {info}')
+    print(('OK  ' if ok else 'FAIL') + f' [{i:03d}] {source_items[i]["name"]}: {info}')
 success = sum(ok for _, ok, _ in results)
-print('Exact individual bar photos:', success, '/', len(items))
-if success != 113:
+print('Exact individual bar photos:', success, '/', len(source_items))
+if success != len(source_items):
     raise SystemExit(f'Build stopped: {113-success} original bar images missing')

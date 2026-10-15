@@ -37,3 +37,12 @@ body{padding-bottom:82px}[hidden]{display:none!important}.topbar .brand img,foot
 .brand img,.cart-brandline img,.news-logo,.photo-disclaimer img{object-fit:cover;background:#111;border-radius:12px!important}
 .photo-disclaimer{background:rgba(17,18,17,.85);color:#fff}
 .photo-disclaimer img{border:1px solid rgba(255,255,255,.3)}
+
+/* Basket has priority over bottom nav, with proper light footer contrast. */
+.cart-is-open .app-bottom-nav{visibility:hidden!important;pointer-events:none!important}
+#cart-drawer{z-index:140!important}
+#cart-backdrop{z-index:130!important}
+#cart-drawer .cart-header{background:#f4f0e7!important;color:#282823!important;border-radius:20px 20px 0 0}
+#cart-drawer .cart-footer{background:#efe8dc!important;color:#282823!important}
+#cart-drawer .cart-total b{color:#251f17!important}
+#cart-drawer .cart-line{background:#fff!important}

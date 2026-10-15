@@ -18,7 +18,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DEST = ROOT / "data/news.json"
 LOCAL = ROOT / "android/app/src/main/assets/site/data/news.json"
 SOURCE = "https://t.me/s/cafe_Pride_Volna"

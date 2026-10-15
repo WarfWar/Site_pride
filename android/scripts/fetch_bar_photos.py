@@ -17,7 +17,7 @@ OUT = SITE / 'bar_photos'
 HOST = 'https://cafe-pride-menu.savory-heron-9771.chatgpt.site'
 OUT.mkdir(parents=True, exist_ok=True)
 items = json.loads(BAR.read_text(encoding='utf-8'))
-assert len(items) == 106, f'Wrong number of curated bar items: {len(items)}'
+assert len(items) == 108, f'Wrong number of curated bar items: {len(items)}'
 # Keep all original images in the APK even after removing duplicate products.
 req=urllib.request.Request(HOST+'/menu.json',headers={'User-Agent':'Mozilla/5.0 PrideAndroid/1.7'})
 with urllib.request.urlopen(req,timeout=40) as response:

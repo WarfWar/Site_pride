@@ -1,6 +1,4 @@
-plugins {
-    id("com.android.application")
-}
+plugins { id("com.android.application") }
 
 android {
     namespace = "ru.pridecafe.menu"
@@ -10,8 +8,20 @@ android {
         applicationId = "ru.pridecafe.menu"
         minSdk = 24
         targetSdk = 34
-        versionCode = 4
-        versionName = "1.4.0"
+        versionCode = 6
+        versionName = "1.6.0"
+    }
+
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("../signing/pride-debug.p12")
+            storePassword = "android"
+            keyAlias = "pride_debug"
+            keyPassword = "android"
+        }
+    }
+    buildTypes {
+        getByName("debug") { signingConfig = signingConfigs.getByName("debug") }
     }
 
     compileOptions {

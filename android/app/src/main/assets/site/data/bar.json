@@ -1,0 +1,1019 @@
+[
+  {
+    "category": "Водка",
+    "title": "Тундра",
+    "weight": "50мл",
+    "description": "",
+    "price": "150",
+    "image": "./bar_photos/menu-121.webp",
+    "source_image": "/assets/menu-121.webp"
+  },
+  {
+    "category": "Водка",
+    "title": "Белая Сова",
+    "weight": "50мл",
+    "description": "",
+    "price": "180",
+    "image": "./bar_photos/menu-122.webp",
+    "source_image": "/assets/menu-122.webp"
+  },
+  {
+    "category": "Водка",
+    "title": "Мамонт",
+    "weight": "50мл",
+    "description": "",
+    "price": "310",
+    "image": "./bar_photos/menu-123.webp",
+    "source_image": "/assets/menu-123.webp"
+  },
+  {
+    "category": "Водка",
+    "title": "Финляндия",
+    "weight": "50мл",
+    "description": "",
+    "price": "320",
+    "image": "./bar_photos/menu-124.webp",
+    "source_image": "/assets/menu-124.webp"
+  },
+  {
+    "category": "Водка",
+    "title": "Белуга",
+    "weight": "50мл",
+    "description": "",
+    "price": "340",
+    "image": "./bar_photos/menu-125.webp",
+    "source_image": "/assets/menu-125.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Армянский 3 года",
+    "weight": "50мл",
+    "description": "",
+    "price": "230",
+    "image": "./bar_photos/menu-126.webp",
+    "source_image": "/assets/menu-126.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Армянский 5 лет",
+    "weight": "50мл",
+    "description": "",
+    "price": "240",
+    "image": "./bar_photos/menu-127.webp",
+    "source_image": "/assets/menu-127.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Коктебель 3 года",
+    "weight": "50мл",
+    "description": "",
+    "price": "280",
+    "image": "./bar_photos/menu-128.webp",
+    "source_image": "/assets/menu-128.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Хеннесси",
+    "weight": "50мл",
+    "description": "",
+    "price": "1050",
+    "image": "./bar_photos/menu-129.webp",
+    "source_image": "/assets/menu-129.webp"
+  },
+  {
+    "category": "Коньяк и бренди",
+    "title": "Мартель",
+    "weight": "50мл",
+    "description": "",
+    "price": "950",
+    "image": "./bar_photos/menu-130.webp",
+    "source_image": "/assets/menu-130.webp"
+  },
+  {
+    "category": "Виски и бурбон",
+    "title": "Джемесон",
+    "weight": "50мл",
+    "description": "",
+    "price": "450",
+    "image": "./bar_photos/menu-131.webp",
+    "source_image": "/assets/menu-131.webp"
+  },
+  {
+    "category": "Виски и бурбон",
+    "title": "Джим Бим",
+    "weight": "50мл",
+    "description": "",
+    "price": "400",
+    "image": "./bar_photos/menu-132.webp",
+    "source_image": "/assets/menu-132.webp"
+  },
+  {
+    "category": "Виски и бурбон",
+    "title": "Бушмилс",
+    "weight": "50мл",
+    "description": "",
+    "price": "450",
+    "image": "./bar_photos/menu-133.webp",
+    "source_image": "/assets/menu-133.webp"
+  },
+  {
+    "category": "Виски и бурбон",
+    "title": "Джек Дэниелс",
+    "weight": "50мл",
+    "description": "",
+    "price": "500",
+    "image": "./bar_photos/menu-134.webp",
+    "source_image": "/assets/menu-134.webp"
+  },
+  {
+    "category": "Виски и бурбон",
+    "title": "Чивас 12 лет",
+    "weight": "50мл",
+    "description": "",
+    "price": "650",
+    "image": "./bar_photos/menu-135.webp",
+    "source_image": "/assets/menu-135.webp"
+  },
+  {
+    "category": "Битеры, ликёры, вермуты",
+    "title": "Мартини Бьянко",
+    "weight": "50мл",
+    "description": "",
+    "price": "250",
+    "image": "./bar_photos/menu-136.webp",
+    "source_image": "/assets/menu-136.webp"
+  },
+  {
+    "category": "Битеры, ликёры, вермуты",
+    "title": "Ягермайстер",
+    "weight": "50мл",
+    "description": "",
+    "price": "420",
+    "image": "./bar_photos/menu-137.webp",
+    "source_image": "/assets/menu-137.webp"
+  },
+  {
+    "category": "Битеры, ликёры, вермуты",
+    "title": "Самбука",
+    "weight": "50мл",
+    "description": "",
+    "price": "500",
+    "image": "./bar_photos/menu-138.webp",
+    "source_image": "/assets/menu-138.webp"
+  },
+  {
+    "category": "Битеры, ликёры, вермуты",
+    "title": "Абсент",
+    "weight": "50мл",
+    "description": "",
+    "price": "500",
+    "image": "./bar_photos/menu-139.webp",
+    "source_image": "/assets/menu-139.webp"
+  },
+  {
+    "category": "Битеры, ликёры, вермуты",
+    "title": "Апероль",
+    "weight": "50мл",
+    "description": "",
+    "price": "390",
+    "image": "./bar_photos/menu-140.webp",
+    "source_image": "/assets/menu-140.webp"
+  },
+  {
+    "category": "Джин",
+    "title": "Бифитер",
+    "weight": "50мл",
+    "description": "",
+    "price": "450",
+    "image": "./bar_photos/menu-141.webp",
+    "source_image": "/assets/menu-141.webp"
+  },
+  {
+    "category": "Джин",
+    "title": "Гордонс",
+    "weight": "50мл",
+    "description": "",
+    "price": "400",
+    "image": "./bar_photos/menu-142.webp",
+    "source_image": "/assets/menu-142.webp"
+  },
+  {
+    "category": "Ром",
+    "title": "Оакхарт",
+    "weight": "50мл",
+    "description": "",
+    "price": "350",
+    "image": "./bar_photos/menu-143.webp",
+    "source_image": "/assets/menu-143.webp"
+  },
+  {
+    "category": "Ром",
+    "title": "Капитан Морган (Золотой)",
+    "weight": "50мл",
+    "description": "",
+    "price": "350",
+    "image": "./bar_photos/menu-144.webp",
+    "source_image": "/assets/menu-144.webp"
+  },
+  {
+    "category": "Ром",
+    "title": "Капитан Морган (Тёмный)",
+    "weight": "50мл",
+    "description": "",
+    "price": "350",
+    "image": "./bar_photos/menu-145.webp",
+    "source_image": "/assets/menu-145.webp"
+  },
+  {
+    "category": "Текила",
+    "title": "Ольмека Сильвер",
+    "weight": "50мл",
+    "description": "",
+    "price": "500",
+    "image": "./bar_photos/menu-146.webp",
+    "source_image": "/assets/menu-146.webp"
+  },
+  {
+    "category": "Текила",
+    "title": "Ольмека Золотая",
+    "weight": "50мл",
+    "description": "",
+    "price": "500",
+    "image": "./bar_photos/menu-147.webp",
+    "source_image": "/assets/menu-147.webp"
+  },
+  {
+    "category": "Шампанское",
+    "title": "Моёт",
+    "weight": "750мл",
+    "description": "",
+    "price": "17000",
+    "image": "./bar_photos/menu-148.webp",
+    "source_image": "/assets/menu-148.webp"
+  },
+  {
+    "category": "Игристые вина",
+    "title": "Абрау-Дюрсо",
+    "weight": "750мл",
+    "description": "брют, полусладкое, полусухое",
+    "price": "1600",
+    "image": "./bar_photos/menu-149.webp",
+    "source_image": "/assets/menu-149.webp"
+  },
+  {
+    "category": "Игристые вина",
+    "title": "Санто Стефано",
+    "weight": "750мл",
+    "description": "красное полусладкое, белое полусладкое, белое полусухое",
+    "price": "1200",
+    "image": "./bar_photos/menu-150.webp",
+    "source_image": "/assets/menu-150.webp"
+  },
+  {
+    "category": "Игристые вина",
+    "title": "Бадагони",
+    "weight": "750мл",
+    "description": "брют сухое, белое полусладкое, розовое полусладкое, красное полусладкое",
+    "price": "1800",
+    "image": "./bar_photos/menu-151.webp",
+    "source_image": "/assets/menu-151.webp"
+  },
+  {
+    "category": "Игристые вина",
+    "title": "Мартини Асти",
+    "weight": "750мл",
+    "description": "",
+    "price": "4500",
+    "image": "./bar_photos/menu-152.webp",
+    "source_image": "/assets/menu-152.webp"
+  },
+  {
+    "category": "Игристые вина",
+    "title": "Мартини Просекко",
+    "weight": "750мл",
+    "description": "",
+    "price": "4600",
+    "image": "./bar_photos/menu-153.webp",
+    "source_image": "/assets/menu-153.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Алазанская Долина (белое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-154.webp",
+    "source_image": "/assets/menu-154.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Алазанская Долина (красное)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-155.webp",
+    "source_image": "/assets/menu-155.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Хванчкара (красное полусладкое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "3500",
+    "image": "./bar_photos/menu-156.webp",
+    "source_image": "/assets/menu-156.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Саперави (красное сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2150",
+    "image": "./bar_photos/menu-157.webp",
+    "source_image": "/assets/menu-157.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Цинандали (белое сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-158.webp",
+    "source_image": "/assets/menu-158.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Пино Гриджио (белое сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2600",
+    "image": "./bar_photos/menu-159.webp",
+    "source_image": "/assets/menu-159.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Рислинг (белое полусухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2900",
+    "image": "./bar_photos/menu-160.webp",
+    "source_image": "/assets/menu-160.webp"
+  },
+  {
+    "category": "Пиво",
+    "title": "Жигули барное",
+    "weight": "0,45л",
+    "description": "",
+    "price": "230",
+    "image": "./bar_photos/menu-161.webp",
+    "source_image": "/assets/menu-161.webp"
+  },
+  {
+    "category": "Пиво",
+    "title": "Стелла алк.",
+    "weight": "0,44л",
+    "description": "",
+    "price": "290",
+    "image": "./bar_photos/menu-162.webp",
+    "source_image": "/assets/menu-162.webp"
+  },
+  {
+    "category": "Пиво",
+    "title": "Жигули б/а",
+    "weight": "0,45л",
+    "description": "",
+    "price": "250",
+    "image": "./bar_photos/menu-163.webp",
+    "source_image": "/assets/menu-163.webp"
+  },
+  {
+    "category": "Пиво",
+    "title": "Корона",
+    "weight": "0,355л",
+    "description": "",
+    "price": "450",
+    "image": "./bar_photos/menu-164.webp",
+    "source_image": "/assets/menu-164.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Кловер Клаб",
+    "weight": "170 мл",
+    "description": "джин, мартини бьянко, лимонный фреш, сироп малины",
+    "price": "780",
+    "image": "./bar_photos/clover-club.webp",
+    "source_image": "/assets/clover-club.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Рэд Раш",
+    "weight": "190 мл",
+    "description": "сок вишни, водка, трипл сек, лимонный фреш",
+    "price": "600",
+    "image": "./bar_photos/menu-165.webp",
+    "source_image": "/assets/menu-165.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Английский Завтрак",
+    "weight": "125 мл",
+    "description": "джин, лимонный фреш, пюре малины",
+    "price": "660",
+    "image": "./bar_photos/menu-166.webp",
+    "source_image": "/assets/menu-166.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Апероль Спритц",
+    "weight": "270 мл",
+    "description": "апероль, игристое вино, вода газ.",
+    "price": "830",
+    "image": "./bar_photos/menu-167.webp",
+    "source_image": "/assets/menu-167.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Апероль Спритц Вишнёвый",
+    "weight": "260 мл",
+    "description": "апероль, сок вишни, игристое вино",
+    "price": "880",
+    "image": "./bar_photos/menu-168.webp",
+    "source_image": "/assets/menu-168.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Голубая Лагуна",
+    "weight": "170 мл",
+    "description": "блю кюрасао, водка, лимонный фреш, спрайт",
+    "price": "590",
+    "image": "./bar_photos/menu-169.webp",
+    "source_image": "/assets/menu-169.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Лонг Айленд",
+    "weight": "240 мл",
+    "description": "водка, трипл сек, джин, текила, ром, кола",
+    "price": "790",
+    "image": "./bar_photos/menu-170.webp",
+    "source_image": "/assets/menu-170.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Мохито",
+    "weight": "365 мл",
+    "description": "мята, лайм, ром, спрайт",
+    "price": "590",
+    "image": "./bar_photos/menu-171.webp",
+    "source_image": "/assets/menu-171.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Виски-кола",
+    "weight": "200 мл",
+    "description": "виски, кола",
+    "price": "400",
+    "image": "./bar_photos/menu-172.webp",
+    "source_image": "/assets/menu-172.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Манго Маргарита",
+    "weight": "135 мл",
+    "description": "пюре манго, текила, трипл сек, лимонный фреш",
+    "price": "590",
+    "image": "./bar_photos/menu-173.webp",
+    "source_image": "/assets/menu-173.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Клубничный Дайкири",
+    "weight": "115 мл",
+    "description": "пюре клубники, ром, лимонный фреш",
+    "price": "620",
+    "image": "./bar_photos/menu-174.webp",
+    "source_image": "/assets/menu-174.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Горящий Ламборгини",
+    "weight": "150 мл",
+    "description": "ром, сироп, блю кюрасао, трипл сек",
+    "price": "950",
+    "image": "./bar_photos/menu-175.webp",
+    "source_image": "/assets/menu-175.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Изумрудная кровь",
+    "weight": "175 мл",
+    "description": "ягермайстер, блю кюрасао, спрайт",
+    "price": "690",
+    "image": "./bar_photos/menu-176.webp",
+    "source_image": "/assets/menu-176.webp"
+  },
+  {
+    "category": "Коктейли алкогольные",
+    "title": "Глинтвейн",
+    "weight": "300мл",
+    "description": "красное вино, специи, апельсин",
+    "price": "390",
+    "image": "./bar_photos/menu-177.webp",
+    "source_image": "/assets/menu-177.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Б-52",
+    "weight": "60мл",
+    "description": "трипл сек, сливочный ликёр, кофейный ликёр",
+    "price": "450",
+    "image": "./bar_photos/menu-178.webp",
+    "source_image": "/assets/menu-178.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Б-53",
+    "weight": "60мл",
+    "description": "кофейный ликёр, сливочный ликёр, абсент",
+    "price": "450",
+    "image": "./bar_photos/menu-179.webp",
+    "source_image": "/assets/menu-179.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Барби",
+    "weight": "60мл",
+    "description": "водка, сироп, сливочный ликёр",
+    "price": "450",
+    "image": "./bar_photos/menu-180.webp",
+    "source_image": "/assets/menu-180.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Зелёный Мексиканец",
+    "weight": "60мл",
+    "description": "текила, лимонный фреш, ликёр пизан",
+    "price": "450",
+    "image": "./bar_photos/menu-181.webp",
+    "source_image": "/assets/menu-181.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Зелёный Халк",
+    "weight": "60мл",
+    "description": "абсент, ром, самбука",
+    "price": "450",
+    "image": "./bar_photos/menu-182.webp",
+    "source_image": "/assets/menu-182.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Медуза",
+    "weight": "60мл",
+    "description": "водка, самбука, сливочный ликёр, блю кюрасао",
+    "price": "450",
+    "image": "./bar_photos/menu-183.webp",
+    "source_image": "/assets/menu-183.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Облака",
+    "weight": "60мл",
+    "description": "текила, самбука, абсент, блю кюрасао, сливочный ликёр",
+    "price": "450",
+    "image": "./bar_photos/menu-184.webp",
+    "source_image": "/assets/menu-184.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Патриот",
+    "weight": "60мл",
+    "description": "сироп, водка, блю кюрасао, сливочный ликёр",
+    "price": "450",
+    "image": "./bar_photos/menu-185.webp",
+    "source_image": "/assets/menu-185.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Хиросима",
+    "weight": "60мл",
+    "description": "абсент, сливочный ликёр, самбука, сироп",
+    "price": "450",
+    "image": "./bar_photos/menu-186.webp",
+    "source_image": "/assets/menu-186.webp"
+  },
+  {
+    "category": "Шоты",
+    "title": "Пьяная Дыня",
+    "weight": "60мл",
+    "description": "самбука, дынный ликёр, лимонный фреш, джин",
+    "price": "450",
+    "image": "./bar_photos/menu-187.webp",
+    "source_image": "/assets/menu-187.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Вода газ. (стекло)",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-188.webp",
+    "source_image": "/assets/menu-188.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Вода б/г (стекло)",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-189.webp",
+    "source_image": "/assets/menu-189.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Боржоми",
+    "weight": "0,5л",
+    "description": "",
+    "price": "300",
+    "image": "./bar_photos/menu-190.webp",
+    "source_image": "/assets/menu-190.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Кола ж/б",
+    "weight": "0,33л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-191.webp",
+    "source_image": "/assets/menu-191.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Спрайт ж/б",
+    "weight": "0,33л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-192.webp",
+    "source_image": "/assets/menu-192.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Рэд Булл",
+    "weight": "0,25л",
+    "description": "",
+    "price": "275",
+    "image": "./bar_photos/menu-193.webp",
+    "source_image": "/assets/menu-193.webp"
+  },
+  {
+    "category": "Напитки б/а",
+    "title": "Сок в ассортименте",
+    "weight": "200мл",
+    "description": "",
+    "price": "100",
+    "image": "./bar_photos/menu-194.webp",
+    "source_image": "/assets/menu-194.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Яблочный штрудель",
+    "weight": "0,4л",
+    "description": "пюре яблоко, сироп ваниль, яблочный сок, вода газ., яблоко",
+    "price": "370",
+    "image": "./bar_photos/menu-195.webp",
+    "source_image": "/assets/menu-195.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Тропиканка",
+    "weight": "0,4л",
+    "description": "пюре манго-маракуйя, лимонный фреш, вода газ., апельсин, лайм, мята",
+    "price": "370",
+    "image": "./bar_photos/menu-196.webp",
+    "source_image": "/assets/menu-196.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Чистая страсть",
+    "weight": "0,4л",
+    "description": "сироп карамель, лимонный фреш, сок апельсин, пюре маракуйи, вода газ., апельсин",
+    "price": "360",
+    "image": "./bar_photos/menu-197.webp",
+    "source_image": "/assets/menu-197.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Малиново-лаймовый",
+    "weight": "0,4л",
+    "description": "пюре малины, лайм, лимонный фреш, вода газ., мята",
+    "price": "360",
+    "image": "./bar_photos/menu-198.webp",
+    "source_image": "/assets/menu-198.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Облепиховый",
+    "weight": "0,4л",
+    "description": "облепиха, сироп ваниль, вода газ., мята",
+    "price": "380",
+    "image": "./bar_photos/menu-199.webp",
+    "source_image": "/assets/menu-199.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Ягодный",
+    "weight": "0,4л",
+    "description": "пюре малина, пюре клубника, сироп гренадин, вода газ.",
+    "price": "360",
+    "image": "./bar_photos/menu-200.webp",
+    "source_image": "/assets/menu-200.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Малина-маракуйя",
+    "weight": "0,4л",
+    "description": "пюре малины, пюре маракуйи, апельсин, вода газ., мята",
+    "price": "360",
+    "image": "./bar_photos/menu-201.webp",
+    "source_image": "/assets/menu-201.webp"
+  },
+  {
+    "category": "Лимонады",
+    "title": "Мохито б/а",
+    "weight": "0,4л",
+    "description": "мята, лайм, спрайт",
+    "price": "380",
+    "image": "./bar_photos/menu-202.webp",
+    "source_image": "/assets/menu-202.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Американо",
+    "weight": "200мл",
+    "description": "",
+    "price": "150",
+    "image": "./bar_photos/menu-203.webp",
+    "source_image": "/assets/menu-203.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Капучино",
+    "weight": "200мл",
+    "description": "",
+    "price": "250",
+    "image": "./bar_photos/menu-204.webp",
+    "source_image": "/assets/menu-204.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Латте",
+    "weight": "180мл",
+    "description": "",
+    "price": "250",
+    "image": "./bar_photos/menu-205.webp",
+    "source_image": "/assets/menu-205.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Эспрессо",
+    "weight": "40мл",
+    "description": "",
+    "price": "120",
+    "image": "./bar_photos/menu-206.webp",
+    "source_image": "/assets/menu-206.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Айс-латте",
+    "weight": "250мл",
+    "description": "",
+    "price": "250",
+    "image": "./bar_photos/menu-207.webp",
+    "source_image": "/assets/menu-207.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Бамбл",
+    "weight": "200мл",
+    "description": "апельсин/вишня",
+    "price": "300",
+    "image": "./bar_photos/menu-208.webp",
+    "source_image": "/assets/menu-208.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Флэт Уайт",
+    "weight": "250мл",
+    "description": "",
+    "price": "350",
+    "image": "./bar_photos/menu-209.webp",
+    "source_image": "/assets/menu-209.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Какао",
+    "weight": "350мл",
+    "description": "",
+    "price": "300",
+    "image": "./bar_photos/menu-210.webp",
+    "source_image": "/assets/menu-210.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Кокосовый бум",
+    "weight": "350мл",
+    "description": "",
+    "price": "350",
+    "image": "./bar_photos/menu-211.webp",
+    "source_image": "/assets/menu-211.webp"
+  },
+  {
+    "category": "Кофе",
+    "title": "Сироп в ассортименте",
+    "weight": "20мл",
+    "description": "ваниль, шоколад, банан, клубника, малина, карамель, вишня",
+    "price": "30",
+    "image": "./bar_photos/menu-212.webp",
+    "source_image": "/assets/menu-212.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Чёрный",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-213.webp",
+    "source_image": "/assets/menu-213.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Зелёный",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-214.webp",
+    "source_image": "/assets/menu-214.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Жасминовый",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-215.webp",
+    "source_image": "/assets/menu-215.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Эрл Грей",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-216.webp",
+    "source_image": "/assets/menu-216.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Молочный Пуэр",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-217.webp",
+    "source_image": "/assets/menu-217.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Клубника-манго",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-218.webp",
+    "source_image": "/assets/menu-218.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Имбирь-лимон",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-219.webp",
+    "source_image": "/assets/menu-219.webp"
+  },
+  {
+    "category": "Чай",
+    "title": "Каркадэ",
+    "weight": "0,5л",
+    "description": "",
+    "price": "200",
+    "image": "./bar_photos/menu-220.webp",
+    "source_image": "/assets/menu-220.webp"
+  },
+  {
+    "category": "Авторские чаи",
+    "title": "Яблочно-ванильный",
+    "weight": "0,6л",
+    "description": "чай чёрный, сироп ваниль, яблоко, корица, пюре яблоко",
+    "price": "450",
+    "image": "./bar_photos/menu-221.webp",
+    "source_image": "/assets/menu-221.webp"
+  },
+  {
+    "category": "Авторские чаи",
+    "title": "Облепихово-имбирный",
+    "weight": "0,6л",
+    "description": "облепиха, имбирь, мята, бадьян, гвоздика, корица, мята, сироп ваниль, лимон",
+    "price": "450",
+    "image": "./bar_photos/menu-222.webp",
+    "source_image": "/assets/menu-222.webp"
+  },
+  {
+    "category": "Авторские чаи",
+    "title": "Имбирно-лимонный",
+    "weight": "0,6л",
+    "description": "имбирь, лимон, мята, мёд, чай зелёный",
+    "price": "450",
+    "image": "./bar_photos/menu-223.webp",
+    "source_image": "/assets/menu-223.webp"
+  },
+  {
+    "category": "Авторские чаи",
+    "title": "Малиново-клубничный",
+    "weight": "0,6л",
+    "description": "пюре малины, пюре клубники, сироп малины, мята, бадьян, апельсин, чай чёрный",
+    "price": "450",
+    "image": "./bar_photos/menu-224.webp",
+    "source_image": "/assets/menu-224.webp"
+  },
+  {
+    "category": "Авторские чаи",
+    "title": "Гранатово-вишнёвый",
+    "weight": "0,6л",
+    "description": "грейпфрут, пюре гранат, сок вишни, лимон, сироп гренадин, чай каркадэ",
+    "price": "450",
+    "image": "./bar_photos/menu-225.webp",
+    "source_image": "/assets/menu-225.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Алазанская Долина (белое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-226.webp",
+    "source_image": "/assets/menu-226.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Алазанская Долина (красное)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-227.webp",
+    "source_image": "/assets/menu-227.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Хванчкара (красное полусладкое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "3500",
+    "image": "./bar_photos/menu-228.webp",
+    "source_image": "/assets/menu-228.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Саперави (красное сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2150",
+    "image": "./bar_photos/menu-229.webp",
+    "source_image": "/assets/menu-229.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Цинандали (белое сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "1600",
+    "image": "./bar_photos/menu-230.webp",
+    "source_image": "/assets/menu-230.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Пино Гриджио (белое сухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2600",
+    "image": "./bar_photos/menu-231.webp",
+    "source_image": "/assets/menu-231.webp"
+  },
+  {
+    "category": "Винная карта",
+    "title": "Рислинг (белое полусухое)",
+    "weight": "750мл",
+    "description": "",
+    "price": "2900",
+    "image": "./bar_photos/menu-232.webp",
+    "source_image": "/assets/menu-232.webp"
+  }
+]

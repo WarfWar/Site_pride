@@ -77,6 +77,17 @@ jobs:
           python3 -m pip install -q beautifulsoup4
           python3 android/scripts/sync_pride_news.py --bundle
 
+      - name: Recover original bar photos (113 distinct WebP files)
+        run: python3 android/scripts/fetch_bar_photos.py
+
+      - name: Verify both menus, navigation, basket, logo and JavaScript
+        run: |
+          python3 android/scripts/check_site.py
+          node --check android/app/src/main/assets/site/app.js
+          node --check android/app/src/main/assets/site/cart.js
+          node --check android/app/src/main/assets/site/photos.js
+          node --check android/app/src/main/assets/site/news.js
+
       - name: Build debug APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
@@ -107,6 +118,33 @@ jobs:
               print('Validated original logo and offline news snapshot. Posts:',len(j['posts']))
           PY
 
+      - name: Verify complete offline bar gallery and persistent debug cert
+        run: |
+          python3 - <<'PY'
+          from zipfile import ZipFile
+          path='android/app/build/outputs/apk/debug/app-debug.apk'
+          with ZipFile(path) as z:
+              bar=[n for n in z.namelist() if n.startswith('assets/site/bar_photos/') and n.endswith('.webp')]
+              food=[n for n in z.namelist() if n.startswith('assets/site/photos/') and n.endswith('.webp')]
+              assert len(bar)==113, f'Bar photos: {len(bar)} instead of 113'
+              assert len(food)==125, f'Food photos: {len(food)} instead of 125'
+              assert 'assets/site/assets/pride-brand.png' in z.namelist()
+              print('APK verified: 113 exact bar photos and 125 food photos')
+          PY
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs android/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Preserve individual original bar photos in GitHub
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add android/app/src/main/assets/site/bar_photos/*.webp
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save all 113 individual original bar photographs'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
       - name: Back up source photographs
         uses: actions/upload-artifact@v4
         with:
@@ -117,7 +155,7 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: PrideCafe-v1.4-telegram-news-fixed-apk
+          name: PrideCafe-v1.6-Android-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30

@@ -39,7 +39,7 @@ jobs:
           content=(root/'index.html').read_text('utf-8')
           assert 'id="booking-floor"' in content
           assert 'id="booking-form"' in content
-          assert content.count('class="floor-table')==9
+          assert content.count('data-table="')==9
           assert 'id="booking-table-label"' in content
           assert 'href="#tables"' in content
           print(f'PASS: menu, table selection, photos, news; {len(food)} kitchen + {len(bar)} bar items.')

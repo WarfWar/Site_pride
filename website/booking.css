@@ -1,0 +1,68 @@
+/* Cafe Pride public website | table selection with elegant room-map demonstration. */
+html{scroll-behavior:smooth}
+#tables{scroll-margin-top:92px}
+.booking-section{padding:94px 0 110px;background:#eee8df;color:#272721;position:relative;overflow:hidden}
+.booking-section:before{content:'';position:absolute;top:-240px;right:-200px;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,#fff6e9 0%,rgba(255,255,255,0) 67%);pointer-events:none}
+.booking-section .container{position:relative;z-index:1}
+.booking-intro{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:32px}
+.booking-intro h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,5vw,72px);font-weight:500;line-height:1.08;letter-spacing:-.045em;margin:15px 0 16px}
+.booking-intro h2 em{color:#a57c49;font-style:italic}
+.booking-intro p{font-size:15px;line-height:1.72;max-width:615px;color:#686259;margin:0}
+.booking-intro-phone{white-space:nowrap;color:#241f19;font-size:17px;font-weight:800;border-bottom:1px solid #a57c49;padding-bottom:9px;text-decoration:none}
+.booking-intro-phone span{color:#a57c49;margin-left:10px}
+.booking-layout{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(310px,.84fr);gap:20px;align-items:stretch}
+.booking-map-card{background:#252823;color:#f7f1e5;border-radius:25px;padding:26px;box-shadow:0 18px 55px rgba(30,24,17,.16);min-width:0;display:flex;flex-direction:column}
+.booking-card-head{display:flex;align-items:start;justify-content:space-between;gap:14px;margin-bottom:14px}
+.booking-kicker{font-size:10px;letter-spacing:.2em;font-weight:900;color:#c9a46e;text-transform:uppercase}
+.booking-card-head h3,.booking-request-card h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(24px,2.6vw,35px);font-weight:500;line-height:1.2;margin:10px 0 0}
+.booking-legend{white-space:nowrap;font-size:11px;color:#bdb4a7;display:flex;align-items:center;gap:7px;margin-top:14px}
+.booking-legend i{width:11px;height:11px;border-radius:50%;background:#c9a46e;box-shadow:0 0 0 3px rgba(201,164,110,.17)}
+.booking-demo-note{font-size:12px;color:#b6b1a7;line-height:1.56;margin:0 0 13px}
+.booking-demo-note strong{color:#ecd0a3}
+.booking-floor{position:relative;flex:1;min-height:445px;border:1px solid #59594e;border-radius:18px;background:radial-gradient(ellipse at 50% 35%,#373d34 0%,#292e29 68%,#262a26 100%);overflow:hidden;isolation:isolate}
+.booking-floor:before{content:'';position:absolute;inset:16px;border:1px dashed rgba(224,195,144,.18);border-radius:12px;pointer-events:none}
+.booking-floor:after{content:'';position:absolute;top:4%;left:50%;height:90%;border-left:1px dashed rgba(230,220,201,.10);pointer-events:none}
+.floor-side{position:absolute;font-size:10px;letter-spacing:.18em;color:#988e7c;z-index:1}
+.floor-side-window{top:17px;left:50%;transform:translateX(-50%)}
+.floor-side-entry{bottom:12px;left:12px}
+.floor-accent{position:absolute;color:#b18b5e;font-size:19px;opacity:.68;pointer-events:none}
+.floor-accent-one{left:9%;top:61%}.floor-accent-two{right:6%;top:35%}
+.floor-table{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:86px;height:86px;border-radius:50%;border:2px solid #ac9670;background:linear-gradient(140deg,#f1e5d1,#d7c4a5);color:#2a261f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-family:inherit;cursor:pointer;transition:transform .16s,background .16s,opacity .16s,border-color .16s,box-shadow .16s;box-shadow:0 7px 20px rgba(0,0,0,.25);z-index:2}
+.floor-table-number{font:700 21px/1 Georgia,serif}
+.floor-table-seats{font-size:10px;font-weight:700}
+.floor-table:before,.floor-table:after{content:'';position:absolute;width:27px;height:8px;background:rgba(218,201,172,.55);border-radius:3px;left:calc(50% - 13px)}
+.floor-table:before{top:-12px}.floor-table:after{bottom:-12px}
+.floor-table:hover:not(:disabled){transform:translate(-50%,-50%) scale(1.07);border-color:#eacb8b}
+.floor-table:focus-visible{outline:3px solid #ffdda1;outline-offset:4px}
+.floor-table.is-selected{background:linear-gradient(140deg,#e8c990,#b98c49);border-color:#ffe2aa;box-shadow:0 0 0 6px rgba(212,166,92,.22),0 12px 28px rgba(0,0,0,.35)}
+.floor-table:disabled{opacity:.32;filter:grayscale(1);cursor:not-allowed}
+.floor-table-large{width:96px;height:96px;border-radius:30px}
+.booking-map-hint{color:#b6b1a7;font-size:11px;line-height:1.55;margin:13px 0 0}
+.booking-request-card{border-radius:25px;background:#fffdf9;border:1px solid #e0d4bf;padding:30px 30px 24px;box-shadow:0 18px 55px rgba(30,24,17,.09);min-width:0}
+.booking-request-card h3{color:#242622;margin:11px 0}
+.booking-request-lead{font-size:13px;line-height:1.6;color:#82796c;margin:0 0 24px}
+#booking-form{display:flex;flex-direction:column;gap:16px}
+.booking-field{display:flex;flex-direction:column;gap:8px;font-size:12px;font-weight:800;color:#554d43}
+.booking-field input,.booking-field select,.booking-field textarea{box-sizing:border-box;width:100%;min-height:48px;border:1px solid #d6caba;border-radius:11px;background:#fbf9f5;color:#282720;font:500 15px/1.4 system-ui,-apple-system,sans-serif;padding:11px 12px;outline:none}
+.booking-field textarea{min-height:82px;resize:vertical}
+.booking-field input:focus,.booking-field select:focus,.booking-field textarea:focus{border-color:#ac844e;box-shadow:0 0 0 3px rgba(201,164,110,.19)}
+.booking-two-fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.booking-selected{border:1px solid #e6d9c3;background:#f6f0e6;border-radius:12px;padding:13px 16px;display:flex;flex-direction:column;gap:5px}
+.booking-selected>span{color:#a07a47;font-size:10px;letter-spacing:.13em;font-weight:900}
+.booking-selected strong{color:#272621;font:600 22px/1.2 Georgia,serif}
+.booking-selected small{font-size:12px;line-height:1.5;color:#796d5e}
+.booking-copy,.booking-call{display:flex;align-items:center;justify-content:center;gap:9px;min-height:51px;padding:12px;border-radius:12px;text-decoration:none;font-size:13px;font-weight:900;cursor:pointer;text-align:center}
+.booking-copy{border:1px solid #272b24;background:#272b24;color:#fff}
+.booking-copy:hover{background:#393f34}
+.booking-call{border:1px solid #c1a172;background:#fffaf2;color:#6d4d28}
+.booking-call:hover{background:#f6e7d0}
+.booking-feedback{background:#e9f0e5;border:1px solid #9caf91;color:#324a32;border-radius:11px;padding:12px;font-size:12px;line-height:1.6}
+.booking-feedback.is-error{background:#fff0e7;border-color:#dbab88;color:#8b4429}
+.booking-feedback textarea{margin-top:10px;width:100%;height:110px;resize:vertical;padding:10px;border:1px solid #c9c1b1;border-radius:7px;background:#fff;font-size:12px;color:#29251f}
+.booking-disclaimer{font-size:11px;line-height:1.65;color:#797269;border-top:1px solid #e8dfd3;padding-top:16px;margin:0}
+.booking-disclaimer strong{color:#514539}
+.hero-book-link{border-color:#c9a46e!important;color:#f3d8ae!important}
+@media(max-width:1020px){.booking-layout{grid-template-columns:1fr}.booking-floor{height:430px;min-height:430px}.booking-map-card{padding:24px}.booking-request-card{padding:24px}}
+@media(max-width:720px){.booking-section{padding:65px 0 80px}.booking-intro{flex-direction:column;align-items:flex-start;gap:18px}.booking-intro h2{font-size:43px}.booking-intro-phone{font-size:15px}.booking-layout{gap:15px}.booking-map-card{padding:16px;border-radius:18px}.booking-card-head{flex-direction:column;gap:5px}.booking-legend{margin:0}.booking-card-head h3{font-size:26px}.booking-floor{min-height:360px;height:360px}.floor-table{width:67px;height:67px}.floor-table-number{font-size:18px}.floor-table-seats{font-size:9px}.floor-table-large{height:77px;width:77px;border-radius:25px}.booking-request-card{padding:20px;border-radius:18px}.booking-two-fields{gap:10px}.hero-book-link{font-size:11px!important}}
+@media(max-width:360px){.booking-floor{height:340px;min-height:340px}.floor-table{width:58px;height:58px}.floor-table-large{width:65px;height:65px}.floor-table-number{font-size:16px}.floor-table-seats{font-size:8px}.booking-two-fields{grid-template-columns:1fr}.booking-intro h2{font-size:38px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.floor-table,.booking-copy,.booking-call{transition:none}}

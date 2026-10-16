@@ -1,49 +1,59 @@
 name: Publish Pride Cafe site
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Validate site data and local illustrations
+      - name: Build public website from Android assets and latest news
+        run: |
+          set -euo pipefail
+          python3 website/build_site.py
+      - name: Check menu, photos and booking UI
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
-          data = json.loads(Path('data/menu.json').read_text(encoding='utf-8'))
-          assert len(data) == 125, f'Expected 125 menu items; got {len(data)}'
-          for name in ['index.html','styles.css','app.js','assets/logo.svg','assets/hero.svg','assets/burger.svg','assets/pizza.svg','assets/rolls.svg']:
-              assert Path(name).is_file(), f'Missing: {name}'
-          print('Site validated; menu items:', len(data))
+          root=Path('_site')
+          food=json.loads((root/'data/menu.json').read_text('utf-8'))
+          bar=json.loads((root/'data/bar.json').read_text('utf-8'))
+          assert len(food)==108 and len(bar)==108,(len(food),len(bar))
+          for item in food+bar:
+              photo=root/item['image']
+              assert photo.is_file(),f"Missing photo for {item['title']}: {photo}"
+          assert len(list((root/'photos').glob('*.webp')))>=127
+          assert len(list((root/'bar_photos').glob('*.webp')))>=113
+          content=(root/'index.html').read_text('utf-8')
+          assert 'id="booking-floor"' in content
+          assert 'id="booking-form"' in content
+          assert content.count('class="floor-table')==9
+          assert 'id="booking-table-label"' in content
+          assert 'href="#tables"' in content
+          print(f'PASS: menu, table selection, photos, news; {len(food)} kitchen + {len(bar)} bar items.')
           PY
-
-      - name: Configure Pages
+          node --check _site/booking.js
+          node --check _site/app.js
+          node --check _site/cart.js
+          node --check _site/news.js
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
+      - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
-
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

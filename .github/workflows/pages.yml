@@ -48,8 +48,16 @@ jobs:
           node --check _site/app.js
           node --check _site/cart.js
           node --check _site/news.js
+      - name: Downloadable website preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrideCafe-full-website-preview
+          path: _site
+          retention-days: 30
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
